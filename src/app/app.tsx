@@ -9,7 +9,14 @@ import { HashMapsPage } from '@/topics/hash-maps/hash-maps-page'
 export function App() {
   return (
     <div className="app-shell">
-      <a className="skip-link" href="#main">
+      <a
+        className="skip-link"
+        href="#main"
+        onClick={(event) => {
+          event.preventDefault()
+          document.getElementById('main')?.focus()
+        }}
+      >
         Skip to content
       </a>
       <aside className="sidebar">

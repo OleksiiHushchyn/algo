@@ -28,11 +28,11 @@ npm ci
 npm run dev
 ```
 
-Open the local URL printed by Vite. `/` lists topics; `/topics/binary-search`
-opens the first lesson. `/topics/two-pointers` opens the second, and
-`/topics/sliding-window` opens the third. `/topics/hash-maps` opens the fourth.
+Open the local URL printed by Vite. `/#/` lists topics; `/#/topics/binary-search`
+opens the first lesson. `/#/topics/two-pointers` opens the second, and
+`/#/topics/sliding-window` opens the third. `/#/topics/hash-maps` opens the fourth.
 Link directly to a pattern, for example
-`/topics/sliding-window?pattern=unique`.
+`/#/topics/sliding-window?pattern=unique`.
 Dependencies are locked in `package-lock.json`; use `npm ci` for repeatable installs.
 
 ## Dependency policy
@@ -84,7 +84,7 @@ src/
       search-visualizer.tsx     Step-through array visualization
       trace.ts                 Binary-search trace generator
   test/          Shared test setup
-  main.tsx       React entry point and browser router
+  main.tsx       React entry point and hash router
   styles.css     Tailwind import and global styles
 ```
 
@@ -107,11 +107,43 @@ files. Every `VITE_` variable is included in client code: keep secrets on a serv
 
 ## Deployment
 
-Run `npm run build` and deploy `dist/` to a static host. Configure the host to
-rewrite unknown paths to `/index.html` so direct topic URLs work.
+The app runs entirely in the browser and can be hosted on GitHub Pages without
+a backend or hosting subscription. GitHub Free supports Pages for public repositories;
+private repositories require a plan that includes Pages.
+
+### One-time GitHub setup
+
+1. Open [repository Settings → Pages](https://github.com/OleksiiHushchyn/algo/settings/pages).
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+3. Commit and push these changes to `main`. Alternatively, after the workflow is
+   on GitHub, open **Actions → CI and GitHub Pages → Run workflow** and choose `main`.
+4. Wait for the `check` and `deploy` jobs to succeed. The deployment summary links
+   to the published site: <https://oleksiihushchyn.github.io/algo/>.
+
+`.github/workflows/ci.yml` installs locked dependencies, verifies dependency ages,
+checks formatting, lints, runs tests, and builds the site on pushes and pull requests.
+Only successful pushes or manual runs on `main` upload `dist/` and deploy it.
+Deployment uses GitHub's built-in token; no personal access token or repository
+secret is needed. Later pushes to `main` update the site automatically.
+
+The workflow sets `BASE_PATH` from the repository name (`/algo/`) so asset URLs
+work under the project's Pages path. Routing uses the URL hash so direct links
+and refreshes work without server rewrites, including pattern links such as
+<https://oleksiihushchyn.github.io/algo/#/topics/sliding-window?pattern=unique>.
+
+To verify the Pages build locally:
+
+```sh
+BASE_PATH=/algo/ npm run build
+BASE_PATH=/algo/ npm run preview
+```
+
+Open <http://localhost:4173/algo/>. For a root-hosted site or custom domain, omit
+`BASE_PATH` (defaults to `/`) or change the workflow value to `/`.
 `npm run preview` is for local verification, not a production server.
-For hosting under a subpath, configure Vite's `base` and BrowserRouter's `basename`
-to the same prefix.
+
+See [GitHub's Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
+and [Pages availability](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages).
 
 ## References
 
