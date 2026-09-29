@@ -1,0 +1,1903 @@
+{
+  "checkedAt": "2026-09-29T03:35:26.729Z",
+  "cutoff": "2026-09-22T00:00:00.000Z",
+  "source": "npm registry publication timestamps and deprecation metadata",
+  "packages": [
+    {
+      "name": "@acemir/cssom",
+      "version": "0.9.31",
+      "published": "2026-01-12T13:17:15.019Z",
+      "source": "https://registry.npmjs.org/%40acemir%2Fcssom"
+    },
+    {
+      "name": "@adobe/css-tools",
+      "version": "4.5.0",
+      "published": "2026-05-21T22:37:48.114Z",
+      "source": "https://registry.npmjs.org/%40adobe%2Fcss-tools"
+    },
+    {
+      "name": "@asamuzakjp/css-color",
+      "version": "4.1.2",
+      "published": "2026-02-05T13:42:15.026Z",
+      "source": "https://registry.npmjs.org/%40asamuzakjp%2Fcss-color"
+    },
+    {
+      "name": "@asamuzakjp/dom-selector",
+      "version": "6.8.1",
+      "published": "2026-02-14T16:09:21.337Z",
+      "source": "https://registry.npmjs.org/%40asamuzakjp%2Fdom-selector"
+    },
+    {
+      "name": "@asamuzakjp/nwsapi",
+      "version": "2.3.9",
+      "published": "2025-03-28T13:43:07.844Z",
+      "source": "https://registry.npmjs.org/%40asamuzakjp%2Fnwsapi"
+    },
+    {
+      "name": "@babel/code-frame",
+      "version": "7.29.7",
+      "published": "2026-05-25T11:15:38.208Z",
+      "source": "https://registry.npmjs.org/%40babel%2Fcode-frame"
+    },
+    {
+      "name": "@babel/compat-data",
+      "version": "7.29.7",
+      "published": "2026-05-25T11:15:28.103Z",
+      "source": "https://registry.npmjs.org/%40babel%2Fcompat-data"
+    },
+    {
+      "name": "@babel/core",
+      "version": "7.29.7",
+      "published": "2026-05-25T11:16:53.499Z",
+      "source": "https://registry.npmjs.org/%40babel%2Fcore"
+    },
+    {
+      "name": "@babel/generator",
+      "version": "7.29.8",
+      "published": "2026-07-31T15:07:34.643Z",
+      "source": "https://registry.npmjs.org/%40babel%2Fgenerator"
+    },
+    {
+      "name": "@babel/helper-compilation-targets",
+      "version": "7.29.7",
+      "published": "2026-05-25T11:15:38.543Z",
+      "source": "https://registry.npmjs.org/%40babel%2Fhelper-compilation-targets"
+    },
+    {
+      "name": "@babel/helper-globals",
+      "version": "7.29.7",
+      "published": "2026-05-25T11:15:30.361Z",
+      "source": "https://registry.npmjs.org/%40babel%2Fhelper-globals"
+    },
+    {
+      "name": "@babel/helper-module-imports",
+      "version": "7.29.7",
+      "published": "2026-05-25T11:16:37.417Z",
+      "source": "https://registry.npmjs.org/%40babel%2Fhelper-module-imports"
+    },
+    {
+      "name": "@babel/helper-module-transforms",
+      "version": "7.29.7",
+      "published": "2026-05-25T11:16:43.944Z",
+      "source": "https://registry.npmjs.org/%40babel%2Fhelper-module-transforms"
+    },
+    {
+      "name": "@babel/helper-string-parser",
+      "version": "7.29.7",
+      "published": "2026-05-25T11:15:30.727Z",
+      "source": "https://registry.npmjs.org/%40babel%2Fhelper-string-parser"
+    },
+    {
+      "name": "@babel/helper-validator-identifier",
+      "version": "7.29.7",
+      "published": "2026-05-25T11:15:31.539Z",
+      "source": "https://registry.npmjs.org/%40babel%2Fhelper-validator-identifier"
+    },
+    {
+      "name": "@babel/helper-validator-option",
+      "version": "7.29.7",
+      "published": "2026-05-25T11:15:32.613Z",
+      "source": "https://registry.npmjs.org/%40babel%2Fhelper-validator-option"
+    },
+    {
+      "name": "@babel/helpers",
+      "version": "7.29.7",
+      "published": "2026-05-25T11:16:28.369Z",
+      "source": "https://registry.npmjs.org/%40babel%2Fhelpers"
+    },
+    {
+      "name": "@babel/parser",
+      "version": "7.29.9",
+      "published": "2026-09-18T13:50:33.592Z",
+      "source": "https://registry.npmjs.org/%40babel%2Fparser"
+    },
+    {
+      "name": "@babel/runtime",
+      "version": "7.29.7",
+      "published": "2026-05-25T11:15:33.978Z",
+      "source": "https://registry.npmjs.org/%40babel%2Fruntime"
+    },
+    {
+      "name": "@babel/template",
+      "version": "7.29.7",
+      "published": "2026-05-25T11:16:25.858Z",
+      "source": "https://registry.npmjs.org/%40babel%2Ftemplate"
+    },
+    {
+      "name": "@babel/traverse",
+      "version": "7.29.8",
+      "published": "2026-07-31T15:09:38.835Z",
+      "source": "https://registry.npmjs.org/%40babel%2Ftraverse"
+    },
+    {
+      "name": "@babel/types",
+      "version": "7.29.8",
+      "published": "2026-07-31T15:07:29.559Z",
+      "source": "https://registry.npmjs.org/%40babel%2Ftypes"
+    },
+    {
+      "name": "@cacheable/memory",
+      "version": "2.2.0",
+      "published": "2026-06-27T18:19:57.669Z",
+      "source": "https://registry.npmjs.org/%40cacheable%2Fmemory"
+    },
+    {
+      "name": "@cacheable/utils",
+      "version": "2.5.0",
+      "published": "2026-06-27T18:19:51.509Z",
+      "source": "https://registry.npmjs.org/%40cacheable%2Futils"
+    },
+    {
+      "name": "@csstools/color-helpers",
+      "version": "6.1.1",
+      "published": "2026-08-15T16:44:34.927Z",
+      "source": "https://registry.npmjs.org/%40csstools%2Fcolor-helpers"
+    },
+    {
+      "name": "@csstools/css-calc",
+      "version": "3.4.0",
+      "published": "2026-09-13T08:04:36.681Z",
+      "source": "https://registry.npmjs.org/%40csstools%2Fcss-calc"
+    },
+    {
+      "name": "@csstools/css-color-parser",
+      "version": "4.2.3",
+      "published": "2026-09-13T08:03:39.090Z",
+      "source": "https://registry.npmjs.org/%40csstools%2Fcss-color-parser"
+    },
+    {
+      "name": "@csstools/css-parser-algorithms",
+      "version": "4.0.0",
+      "published": "2026-01-14T07:20:09.455Z",
+      "source": "https://registry.npmjs.org/%40csstools%2Fcss-parser-algorithms"
+    },
+    {
+      "name": "@csstools/css-syntax-patches-for-csstree",
+      "version": "1.1.14",
+      "published": "2026-09-15T09:11:14.518Z",
+      "source": "https://registry.npmjs.org/%40csstools%2Fcss-syntax-patches-for-csstree"
+    },
+    {
+      "name": "@csstools/css-tokenizer",
+      "version": "4.0.1",
+      "published": "2026-09-18T05:47:08.401Z",
+      "source": "https://registry.npmjs.org/%40csstools%2Fcss-tokenizer"
+    },
+    {
+      "name": "@emnapi/core",
+      "version": "1.11.1",
+      "published": "2026-06-13T03:36:11.046Z",
+      "source": "https://registry.npmjs.org/%40emnapi%2Fcore"
+    },
+    {
+      "name": "@emnapi/runtime",
+      "version": "1.11.1",
+      "published": "2026-06-13T03:35:59.303Z",
+      "source": "https://registry.npmjs.org/%40emnapi%2Fruntime"
+    },
+    {
+      "name": "@emnapi/wasi-threads",
+      "version": "1.2.2",
+      "published": "2026-06-08T03:01:05.029Z",
+      "source": "https://registry.npmjs.org/%40emnapi%2Fwasi-threads"
+    },
+    {
+      "name": "@eslint-community/eslint-utils",
+      "version": "4.10.1",
+      "published": "2026-07-22T13:06:59.259Z",
+      "source": "https://registry.npmjs.org/%40eslint-community%2Feslint-utils"
+    },
+    {
+      "name": "@eslint-community/regexpp",
+      "version": "4.12.2",
+      "published": "2025-10-22T11:56:00.818Z",
+      "source": "https://registry.npmjs.org/%40eslint-community%2Fregexpp"
+    },
+    {
+      "name": "@eslint/config-array",
+      "version": "0.23.5",
+      "published": "2026-04-08T09:22:37.796Z",
+      "source": "https://registry.npmjs.org/%40eslint%2Fconfig-array"
+    },
+    {
+      "name": "@eslint/config-helpers",
+      "version": "0.7.0",
+      "published": "2026-07-21T08:10:35.250Z",
+      "source": "https://registry.npmjs.org/%40eslint%2Fconfig-helpers"
+    },
+    {
+      "name": "@eslint/core",
+      "version": "1.2.1",
+      "published": "2026-04-08T09:22:28.287Z",
+      "source": "https://registry.npmjs.org/%40eslint%2Fcore"
+    },
+    {
+      "name": "@eslint/js",
+      "version": "10.0.1",
+      "published": "2026-02-06T22:34:56.290Z",
+      "source": "https://registry.npmjs.org/%40eslint%2Fjs"
+    },
+    {
+      "name": "@eslint/object-schema",
+      "version": "3.0.5",
+      "published": "2026-04-08T09:22:34.549Z",
+      "source": "https://registry.npmjs.org/%40eslint%2Fobject-schema"
+    },
+    {
+      "name": "@eslint/plugin-kit",
+      "version": "0.7.3",
+      "published": "2026-09-03T18:10:03.592Z",
+      "source": "https://registry.npmjs.org/%40eslint%2Fplugin-kit"
+    },
+    {
+      "name": "@exodus/bytes",
+      "version": "1.15.2",
+      "published": "2026-09-21T12:05:10.991Z",
+      "source": "https://registry.npmjs.org/%40exodus%2Fbytes"
+    },
+    {
+      "name": "@humanfs/core",
+      "version": "0.19.2",
+      "published": "2026-04-17T20:51:11.882Z",
+      "source": "https://registry.npmjs.org/%40humanfs%2Fcore"
+    },
+    {
+      "name": "@humanfs/node",
+      "version": "0.16.8",
+      "published": "2026-04-17T20:51:26.959Z",
+      "source": "https://registry.npmjs.org/%40humanfs%2Fnode"
+    },
+    {
+      "name": "@humanfs/types",
+      "version": "0.15.0",
+      "published": "2024-09-09T19:44:08.000Z",
+      "source": "https://registry.npmjs.org/%40humanfs%2Ftypes"
+    },
+    {
+      "name": "@humanwhocodes/module-importer",
+      "version": "1.0.1",
+      "published": "2022-08-18T17:55:51.038Z",
+      "source": "https://registry.npmjs.org/%40humanwhocodes%2Fmodule-importer"
+    },
+    {
+      "name": "@humanwhocodes/retry",
+      "version": "0.4.3",
+      "published": "2025-05-07T14:25:57.372Z",
+      "source": "https://registry.npmjs.org/%40humanwhocodes%2Fretry"
+    },
+    {
+      "name": "@jridgewell/gen-mapping",
+      "version": "0.3.13",
+      "published": "2025-08-12T06:43:21.134Z",
+      "source": "https://registry.npmjs.org/%40jridgewell%2Fgen-mapping"
+    },
+    {
+      "name": "@jridgewell/remapping",
+      "version": "2.3.5",
+      "published": "2025-08-12T06:43:35.321Z",
+      "source": "https://registry.npmjs.org/%40jridgewell%2Fremapping"
+    },
+    {
+      "name": "@jridgewell/resolve-uri",
+      "version": "3.1.2",
+      "published": "2024-02-14T19:32:38.143Z",
+      "source": "https://registry.npmjs.org/%40jridgewell%2Fresolve-uri"
+    },
+    {
+      "name": "@jridgewell/sourcemap-codec",
+      "version": "1.6.0",
+      "published": "2026-08-28T01:14:47.331Z",
+      "source": "https://registry.npmjs.org/%40jridgewell%2Fsourcemap-codec"
+    },
+    {
+      "name": "@jridgewell/trace-mapping",
+      "version": "0.3.31",
+      "published": "2025-09-10T20:12:49.468Z",
+      "source": "https://registry.npmjs.org/%40jridgewell%2Ftrace-mapping"
+    },
+    {
+      "name": "@keyv/bigmap",
+      "version": "1.3.1",
+      "published": "2026-01-21T00:47:42.392Z",
+      "source": "https://registry.npmjs.org/%40keyv%2Fbigmap"
+    },
+    {
+      "name": "@keyv/serialize",
+      "version": "1.1.1",
+      "published": "2025-09-10T16:09:07.731Z",
+      "source": "https://registry.npmjs.org/%40keyv%2Fserialize"
+    },
+    {
+      "name": "@napi-rs/wasm-runtime",
+      "version": "1.1.4",
+      "published": "2026-04-15T14:22:55.260Z",
+      "source": "https://registry.npmjs.org/%40napi-rs%2Fwasm-runtime"
+    },
+    {
+      "name": "@oxc-project/types",
+      "version": "0.150.0",
+      "published": "2026-09-14T11:33:55.863Z",
+      "source": "https://registry.npmjs.org/%40oxc-project%2Ftypes"
+    },
+    {
+      "name": "@rolldown/binding-android-arm-eabi",
+      "version": "1.2.9",
+      "published": "2026-09-16T13:15:25.880Z",
+      "source": "https://registry.npmjs.org/%40rolldown%2Fbinding-android-arm-eabi"
+    },
+    {
+      "name": "@rolldown/binding-android-arm64",
+      "version": "1.2.9",
+      "published": "2026-09-16T13:18:59.433Z",
+      "source": "https://registry.npmjs.org/%40rolldown%2Fbinding-android-arm64"
+    },
+    {
+      "name": "@rolldown/binding-darwin-arm64",
+      "version": "1.2.9",
+      "published": "2026-09-16T13:16:49.180Z",
+      "source": "https://registry.npmjs.org/%40rolldown%2Fbinding-darwin-arm64"
+    },
+    {
+      "name": "@rolldown/binding-darwin-x64",
+      "version": "1.2.9",
+      "published": "2026-09-16T13:21:12.218Z",
+      "source": "https://registry.npmjs.org/%40rolldown%2Fbinding-darwin-x64"
+    },
+    {
+      "name": "@rolldown/binding-freebsd-x64",
+      "version": "1.2.9",
+      "published": "2026-09-16T13:19:26.180Z",
+      "source": "https://registry.npmjs.org/%40rolldown%2Fbinding-freebsd-x64"
+    },
+    {
+      "name": "@rolldown/binding-linux-arm-gnueabihf",
+      "version": "1.2.9",
+      "published": "2026-09-16T13:17:10.073Z",
+      "source": "https://registry.npmjs.org/%40rolldown%2Fbinding-linux-arm-gnueabihf"
+    },
+    {
+      "name": "@rolldown/binding-linux-arm64-gnu",
+      "version": "1.2.9",
+      "published": "2026-09-16T13:19:14.831Z",
+      "source": "https://registry.npmjs.org/%40rolldown%2Fbinding-linux-arm64-gnu"
+    },
+    {
+      "name": "@rolldown/binding-linux-arm64-musl",
+      "version": "1.2.9",
+      "published": "2026-09-16T13:16:29.090Z",
+      "source": "https://registry.npmjs.org/%40rolldown%2Fbinding-linux-arm64-musl"
+    },
+    {
+      "name": "@rolldown/binding-linux-ppc64-gnu",
+      "version": "1.2.9",
+      "published": "2026-09-16T13:17:48.224Z",
+      "source": "https://registry.npmjs.org/%40rolldown%2Fbinding-linux-ppc64-gnu"
+    },
+    {
+      "name": "@rolldown/binding-linux-s390x-gnu",
+      "version": "1.2.9",
+      "published": "2026-09-16T13:21:59.011Z",
+      "source": "https://registry.npmjs.org/%40rolldown%2Fbinding-linux-s390x-gnu"
+    },
+    {
+      "name": "@rolldown/binding-linux-x64-gnu",
+      "version": "1.2.9",
+      "published": "2026-09-16T13:22:35.080Z",
+      "source": "https://registry.npmjs.org/%40rolldown%2Fbinding-linux-x64-gnu"
+    },
+    {
+      "name": "@rolldown/binding-linux-x64-musl",
+      "version": "1.2.9",
+      "published": "2026-09-16T13:19:09.533Z",
+      "source": "https://registry.npmjs.org/%40rolldown%2Fbinding-linux-x64-musl"
+    },
+    {
+      "name": "@rolldown/binding-openharmony-arm64",
+      "version": "1.2.9",
+      "published": "2026-09-16T13:19:29.033Z",
+      "source": "https://registry.npmjs.org/%40rolldown%2Fbinding-openharmony-arm64"
+    },
+    {
+      "name": "@rolldown/binding-win32-arm64-msvc",
+      "version": "1.2.9",
+      "published": "2026-09-16T13:18:06.144Z",
+      "source": "https://registry.npmjs.org/%40rolldown%2Fbinding-win32-arm64-msvc"
+    },
+    {
+      "name": "@rolldown/binding-win32-x64-msvc",
+      "version": "1.2.9",
+      "published": "2026-09-16T13:18:47.189Z",
+      "source": "https://registry.npmjs.org/%40rolldown%2Fbinding-win32-x64-msvc"
+    },
+    {
+      "name": "@rolldown/pluginutils",
+      "version": "1.0.1",
+      "published": "2026-05-13T03:52:29.927Z",
+      "source": "https://registry.npmjs.org/%40rolldown%2Fpluginutils"
+    },
+    {
+      "name": "@standard-schema/spec",
+      "version": "1.1.0",
+      "published": "2025-12-15T20:49:46.431Z",
+      "source": "https://registry.npmjs.org/%40standard-schema%2Fspec"
+    },
+    {
+      "name": "@tailwindcss/node",
+      "version": "4.3.3",
+      "published": "2026-07-16T12:03:45.588Z",
+      "source": "https://registry.npmjs.org/%40tailwindcss%2Fnode"
+    },
+    {
+      "name": "@tailwindcss/oxide-android-arm64",
+      "version": "4.3.3",
+      "published": "2026-07-16T12:02:16.125Z",
+      "source": "https://registry.npmjs.org/%40tailwindcss%2Foxide-android-arm64"
+    },
+    {
+      "name": "@tailwindcss/oxide-darwin-arm64",
+      "version": "4.3.3",
+      "published": "2026-07-16T12:02:23.502Z",
+      "source": "https://registry.npmjs.org/%40tailwindcss%2Foxide-darwin-arm64"
+    },
+    {
+      "name": "@tailwindcss/oxide-darwin-x64",
+      "version": "4.3.3",
+      "published": "2026-07-16T12:02:30.305Z",
+      "source": "https://registry.npmjs.org/%40tailwindcss%2Foxide-darwin-x64"
+    },
+    {
+      "name": "@tailwindcss/oxide-freebsd-x64",
+      "version": "4.3.3",
+      "published": "2026-07-16T12:02:38.773Z",
+      "source": "https://registry.npmjs.org/%40tailwindcss%2Foxide-freebsd-x64"
+    },
+    {
+      "name": "@tailwindcss/oxide-linux-arm-gnueabihf",
+      "version": "4.3.3",
+      "published": "2026-07-16T12:02:44.010Z",
+      "source": "https://registry.npmjs.org/%40tailwindcss%2Foxide-linux-arm-gnueabihf"
+    },
+    {
+      "name": "@tailwindcss/oxide-linux-arm64-gnu",
+      "version": "4.3.3",
+      "published": "2026-07-16T12:02:50.692Z",
+      "source": "https://registry.npmjs.org/%40tailwindcss%2Foxide-linux-arm64-gnu"
+    },
+    {
+      "name": "@tailwindcss/oxide-linux-arm64-musl",
+      "version": "4.3.3",
+      "published": "2026-07-16T12:02:58.961Z",
+      "source": "https://registry.npmjs.org/%40tailwindcss%2Foxide-linux-arm64-musl"
+    },
+    {
+      "name": "@tailwindcss/oxide-linux-x64-gnu",
+      "version": "4.3.3",
+      "published": "2026-07-16T12:03:09.029Z",
+      "source": "https://registry.npmjs.org/%40tailwindcss%2Foxide-linux-x64-gnu"
+    },
+    {
+      "name": "@tailwindcss/oxide-linux-x64-musl",
+      "version": "4.3.3",
+      "published": "2026-07-16T12:03:15.491Z",
+      "source": "https://registry.npmjs.org/%40tailwindcss%2Foxide-linux-x64-musl"
+    },
+    {
+      "name": "@tailwindcss/oxide-wasm32-wasi",
+      "version": "4.3.3",
+      "published": "2026-07-16T12:04:17.028Z",
+      "source": "https://registry.npmjs.org/%40tailwindcss%2Foxide-wasm32-wasi"
+    },
+    {
+      "name": "@tailwindcss/oxide-win32-arm64-msvc",
+      "version": "4.3.3",
+      "published": "2026-07-16T12:03:19.935Z",
+      "source": "https://registry.npmjs.org/%40tailwindcss%2Foxide-win32-arm64-msvc"
+    },
+    {
+      "name": "@tailwindcss/oxide-win32-x64-msvc",
+      "version": "4.3.3",
+      "published": "2026-07-16T12:03:24.526Z",
+      "source": "https://registry.npmjs.org/%40tailwindcss%2Foxide-win32-x64-msvc"
+    },
+    {
+      "name": "@tailwindcss/oxide",
+      "version": "4.3.3",
+      "published": "2026-07-16T12:03:29.017Z",
+      "source": "https://registry.npmjs.org/%40tailwindcss%2Foxide"
+    },
+    {
+      "name": "@tailwindcss/vite",
+      "version": "4.3.3",
+      "published": "2026-07-16T12:04:06.316Z",
+      "source": "https://registry.npmjs.org/%40tailwindcss%2Fvite"
+    },
+    {
+      "name": "@testing-library/dom",
+      "version": "10.4.2",
+      "published": "2026-09-13T18:08:36.116Z",
+      "source": "https://registry.npmjs.org/%40testing-library%2Fdom"
+    },
+    {
+      "name": "@testing-library/jest-dom",
+      "version": "7.0.1",
+      "published": "2026-08-09T23:44:33.598Z",
+      "source": "https://registry.npmjs.org/%40testing-library%2Fjest-dom"
+    },
+    {
+      "name": "@testing-library/react",
+      "version": "16.3.3",
+      "published": "2026-08-27T17:41:18.735Z",
+      "source": "https://registry.npmjs.org/%40testing-library%2Freact"
+    },
+    {
+      "name": "@testing-library/user-event",
+      "version": "14.6.7",
+      "published": "2026-09-02T01:56:32.109Z",
+      "source": "https://registry.npmjs.org/%40testing-library%2Fuser-event"
+    },
+    {
+      "name": "@tybys/wasm-util",
+      "version": "0.10.2",
+      "published": "2026-05-04T04:17:09.547Z",
+      "source": "https://registry.npmjs.org/%40tybys%2Fwasm-util"
+    },
+    {
+      "name": "@types/aria-query",
+      "version": "5.0.4",
+      "published": "2023-11-06T23:21:27.739Z",
+      "source": "https://registry.npmjs.org/%40types%2Faria-query"
+    },
+    {
+      "name": "@types/chai",
+      "version": "5.2.3",
+      "published": "2025-10-20T23:32:43.277Z",
+      "source": "https://registry.npmjs.org/%40types%2Fchai"
+    },
+    {
+      "name": "@types/deep-eql",
+      "version": "4.0.2",
+      "published": "2023-11-07T01:34:12.026Z",
+      "source": "https://registry.npmjs.org/%40types%2Fdeep-eql"
+    },
+    {
+      "name": "@types/esrecurse",
+      "version": "4.3.1",
+      "published": "2025-07-19T03:47:09.775Z",
+      "source": "https://registry.npmjs.org/%40types%2Fesrecurse"
+    },
+    {
+      "name": "@types/estree",
+      "version": "1.0.9",
+      "published": "2026-05-06T21:01:00.975Z",
+      "source": "https://registry.npmjs.org/%40types%2Festree"
+    },
+    {
+      "name": "@types/json-schema",
+      "version": "7.0.15",
+      "published": "2023-11-07T08:49:23.527Z",
+      "source": "https://registry.npmjs.org/%40types%2Fjson-schema"
+    },
+    {
+      "name": "@types/node",
+      "version": "24.13.6",
+      "published": "2026-09-19T00:12:26.120Z",
+      "source": "https://registry.npmjs.org/%40types%2Fnode"
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "19.3.0",
+      "published": "2026-09-09T18:07:51.886Z",
+      "source": "https://registry.npmjs.org/%40types%2Freact-dom"
+    },
+    {
+      "name": "@types/react",
+      "version": "19.3.0",
+      "published": "2026-09-09T18:08:49.750Z",
+      "source": "https://registry.npmjs.org/%40types%2Freact"
+    },
+    {
+      "name": "@typescript-eslint/eslint-plugin",
+      "version": "8.70.1",
+      "published": "2026-09-21T17:08:32.480Z",
+      "source": "https://registry.npmjs.org/%40typescript-eslint%2Feslint-plugin"
+    },
+    {
+      "name": "@typescript-eslint/parser",
+      "version": "8.70.1",
+      "published": "2026-09-21T17:09:44.706Z",
+      "source": "https://registry.npmjs.org/%40typescript-eslint%2Fparser"
+    },
+    {
+      "name": "@typescript-eslint/project-service",
+      "version": "8.70.1",
+      "published": "2026-09-21T17:07:09.286Z",
+      "source": "https://registry.npmjs.org/%40typescript-eslint%2Fproject-service"
+    },
+    {
+      "name": "@typescript-eslint/scope-manager",
+      "version": "8.70.1",
+      "published": "2026-09-21T17:07:45.775Z",
+      "source": "https://registry.npmjs.org/%40typescript-eslint%2Fscope-manager"
+    },
+    {
+      "name": "@typescript-eslint/tsconfig-utils",
+      "version": "8.70.1",
+      "published": "2026-09-21T17:07:23.819Z",
+      "source": "https://registry.npmjs.org/%40typescript-eslint%2Ftsconfig-utils"
+    },
+    {
+      "name": "@typescript-eslint/type-utils",
+      "version": "8.70.1",
+      "published": "2026-09-21T17:07:39.111Z",
+      "source": "https://registry.npmjs.org/%40typescript-eslint%2Ftype-utils"
+    },
+    {
+      "name": "@typescript-eslint/types",
+      "version": "8.70.1",
+      "published": "2026-09-21T17:07:05.249Z",
+      "source": "https://registry.npmjs.org/%40typescript-eslint%2Ftypes"
+    },
+    {
+      "name": "@typescript-eslint/typescript-estree",
+      "version": "8.70.1",
+      "published": "2026-09-21T17:07:19.738Z",
+      "source": "https://registry.npmjs.org/%40typescript-eslint%2Ftypescript-estree"
+    },
+    {
+      "name": "@typescript-eslint/utils",
+      "version": "8.70.1",
+      "published": "2026-09-21T17:07:54.816Z",
+      "source": "https://registry.npmjs.org/%40typescript-eslint%2Futils"
+    },
+    {
+      "name": "@typescript-eslint/visitor-keys",
+      "version": "8.70.1",
+      "published": "2026-09-21T17:08:54.266Z",
+      "source": "https://registry.npmjs.org/%40typescript-eslint%2Fvisitor-keys"
+    },
+    {
+      "name": "@vitejs/plugin-react",
+      "version": "6.1.1",
+      "published": "2026-08-28T03:30:56.619Z",
+      "source": "https://registry.npmjs.org/%40vitejs%2Fplugin-react"
+    },
+    {
+      "name": "@vitest/expect",
+      "version": "4.1.11",
+      "published": "2026-08-18T14:22:54.526Z",
+      "source": "https://registry.npmjs.org/%40vitest%2Fexpect"
+    },
+    {
+      "name": "@vitest/mocker",
+      "version": "4.1.11",
+      "published": "2026-08-18T14:23:26.508Z",
+      "source": "https://registry.npmjs.org/%40vitest%2Fmocker"
+    },
+    {
+      "name": "@vitest/pretty-format",
+      "version": "4.1.11",
+      "published": "2026-08-18T14:23:40.848Z",
+      "source": "https://registry.npmjs.org/%40vitest%2Fpretty-format"
+    },
+    {
+      "name": "@vitest/runner",
+      "version": "4.1.11",
+      "published": "2026-08-18T14:23:19.849Z",
+      "source": "https://registry.npmjs.org/%40vitest%2Frunner"
+    },
+    {
+      "name": "@vitest/snapshot",
+      "version": "4.1.11",
+      "published": "2026-08-18T14:23:01.541Z",
+      "source": "https://registry.npmjs.org/%40vitest%2Fsnapshot"
+    },
+    {
+      "name": "@vitest/spy",
+      "version": "4.1.11",
+      "published": "2026-08-18T14:23:47.561Z",
+      "source": "https://registry.npmjs.org/%40vitest%2Fspy"
+    },
+    {
+      "name": "@vitest/utils",
+      "version": "4.1.11",
+      "published": "2026-08-18T14:23:33.791Z",
+      "source": "https://registry.npmjs.org/%40vitest%2Futils"
+    },
+    {
+      "name": "acorn-jsx",
+      "version": "5.3.2",
+      "published": "2021-07-09T01:15:57.512Z",
+      "source": "https://registry.npmjs.org/acorn-jsx"
+    },
+    {
+      "name": "acorn",
+      "version": "8.18.0",
+      "published": "2026-07-28T06:47:49.255Z",
+      "source": "https://registry.npmjs.org/acorn"
+    },
+    {
+      "name": "agent-base",
+      "version": "7.1.4",
+      "published": "2025-07-07T17:44:01.356Z",
+      "source": "https://registry.npmjs.org/agent-base"
+    },
+    {
+      "name": "ajv",
+      "version": "6.15.0",
+      "published": "2026-04-23T14:59:24.089Z",
+      "source": "https://registry.npmjs.org/ajv"
+    },
+    {
+      "name": "ansi-regex",
+      "version": "5.0.1",
+      "published": "2021-09-14T15:55:19.540Z",
+      "source": "https://registry.npmjs.org/ansi-regex"
+    },
+    {
+      "name": "ansi-styles",
+      "version": "5.2.0",
+      "published": "2021-03-31T07:15:34.766Z",
+      "source": "https://registry.npmjs.org/ansi-styles"
+    },
+    {
+      "name": "aria-query",
+      "version": "5.3.0",
+      "published": "2023-06-24T20:48:55.075Z",
+      "source": "https://registry.npmjs.org/aria-query"
+    },
+    {
+      "name": "assertion-error",
+      "version": "2.0.1",
+      "published": "2023-10-18T18:04:13.507Z",
+      "source": "https://registry.npmjs.org/assertion-error"
+    },
+    {
+      "name": "balanced-match",
+      "version": "4.0.4",
+      "published": "2026-02-22T11:38:25.951Z",
+      "source": "https://registry.npmjs.org/balanced-match"
+    },
+    {
+      "name": "baseline-browser-mapping",
+      "version": "2.11.25",
+      "published": "2026-09-17T18:01:35.299Z",
+      "source": "https://registry.npmjs.org/baseline-browser-mapping"
+    },
+    {
+      "name": "bidi-js",
+      "version": "1.1.0",
+      "published": "2026-09-06T19:52:03.767Z",
+      "source": "https://registry.npmjs.org/bidi-js"
+    },
+    {
+      "name": "brace-expansion",
+      "version": "5.0.12",
+      "published": "2026-09-14T21:59:00.288Z",
+      "source": "https://registry.npmjs.org/brace-expansion"
+    },
+    {
+      "name": "browserslist",
+      "version": "4.29.0",
+      "published": "2026-09-15T13:45:00.473Z",
+      "source": "https://registry.npmjs.org/browserslist"
+    },
+    {
+      "name": "cacheable",
+      "version": "2.5.0",
+      "published": "2026-06-27T18:20:16.235Z",
+      "source": "https://registry.npmjs.org/cacheable"
+    },
+    {
+      "name": "caniuse-lite",
+      "version": "1.0.30001810",
+      "published": "2026-08-24T20:04:16.328Z",
+      "source": "https://registry.npmjs.org/caniuse-lite"
+    },
+    {
+      "name": "chai",
+      "version": "6.2.2",
+      "published": "2025-12-22T21:26:03.989Z",
+      "source": "https://registry.npmjs.org/chai"
+    },
+    {
+      "name": "convert-source-map",
+      "version": "2.0.0",
+      "published": "2022-10-17T22:06:48.628Z",
+      "source": "https://registry.npmjs.org/convert-source-map"
+    },
+    {
+      "name": "cookie",
+      "version": "1.1.1",
+      "published": "2025-11-26T17:50:20.759Z",
+      "source": "https://registry.npmjs.org/cookie"
+    },
+    {
+      "name": "cross-spawn",
+      "version": "7.0.6",
+      "published": "2024-11-18T13:59:52.129Z",
+      "source": "https://registry.npmjs.org/cross-spawn"
+    },
+    {
+      "name": "css-tree",
+      "version": "3.2.1",
+      "published": "2026-03-05T14:12:36.884Z",
+      "source": "https://registry.npmjs.org/css-tree"
+    },
+    {
+      "name": "css.escape",
+      "version": "1.5.1",
+      "published": "2016-08-23T20:00:45.435Z",
+      "source": "https://registry.npmjs.org/css.escape"
+    },
+    {
+      "name": "cssstyle",
+      "version": "5.3.7",
+      "published": "2026-01-06T03:19:29.159Z",
+      "source": "https://registry.npmjs.org/cssstyle"
+    },
+    {
+      "name": "csstype",
+      "version": "3.2.3",
+      "published": "2025-11-17T11:42:27.045Z",
+      "source": "https://registry.npmjs.org/csstype"
+    },
+    {
+      "name": "data-urls",
+      "version": "6.0.1",
+      "published": "2026-01-20T03:18:12.611Z",
+      "source": "https://registry.npmjs.org/data-urls"
+    },
+    {
+      "name": "debug",
+      "version": "4.4.3",
+      "published": "2025-09-13T17:25:19.732Z",
+      "source": "https://registry.npmjs.org/debug"
+    },
+    {
+      "name": "decimal.js",
+      "version": "10.6.0",
+      "published": "2025-07-06T22:50:38.844Z",
+      "source": "https://registry.npmjs.org/decimal.js"
+    },
+    {
+      "name": "deep-is",
+      "version": "0.1.4",
+      "published": "2021-09-04T16:55:20.731Z",
+      "source": "https://registry.npmjs.org/deep-is"
+    },
+    {
+      "name": "dequal",
+      "version": "2.0.3",
+      "published": "2022-07-11T23:29:04.965Z",
+      "source": "https://registry.npmjs.org/dequal"
+    },
+    {
+      "name": "detect-libc",
+      "version": "2.1.2",
+      "published": "2025-10-05T12:46:33.077Z",
+      "source": "https://registry.npmjs.org/detect-libc"
+    },
+    {
+      "name": "dom-accessibility-api",
+      "version": "0.5.16",
+      "published": "2023-01-18T20:03:50.833Z",
+      "source": "https://registry.npmjs.org/dom-accessibility-api"
+    },
+    {
+      "name": "dom-accessibility-api",
+      "version": "0.6.3",
+      "published": "2023-09-18T16:38:22.883Z",
+      "source": "https://registry.npmjs.org/dom-accessibility-api"
+    },
+    {
+      "name": "electron-to-chromium",
+      "version": "1.5.433",
+      "published": "2026-09-18T22:03:37.007Z",
+      "source": "https://registry.npmjs.org/electron-to-chromium"
+    },
+    {
+      "name": "enhanced-resolve",
+      "version": "5.25.1",
+      "published": "2026-09-13T14:00:41.791Z",
+      "source": "https://registry.npmjs.org/enhanced-resolve"
+    },
+    {
+      "name": "entities",
+      "version": "8.1.0",
+      "published": "2026-09-07T22:42:04.929Z",
+      "source": "https://registry.npmjs.org/entities"
+    },
+    {
+      "name": "es-module-lexer",
+      "version": "2.3.2",
+      "published": "2026-08-17T01:57:36.160Z",
+      "source": "https://registry.npmjs.org/es-module-lexer"
+    },
+    {
+      "name": "escalade",
+      "version": "3.2.0",
+      "published": "2024-08-29T22:59:36.690Z",
+      "source": "https://registry.npmjs.org/escalade"
+    },
+    {
+      "name": "escape-string-regexp",
+      "version": "4.0.0",
+      "published": "2020-04-23T07:31:25.491Z",
+      "source": "https://registry.npmjs.org/escape-string-regexp"
+    },
+    {
+      "name": "eslint-config-prettier",
+      "version": "10.1.8",
+      "published": "2025-07-18T18:40:08.244Z",
+      "source": "https://registry.npmjs.org/eslint-config-prettier"
+    },
+    {
+      "name": "eslint-plugin-react-hooks",
+      "version": "7.1.1",
+      "published": "2026-04-17T18:03:19.591Z",
+      "source": "https://registry.npmjs.org/eslint-plugin-react-hooks"
+    },
+    {
+      "name": "eslint-plugin-react-refresh",
+      "version": "0.5.7",
+      "published": "2026-09-14T16:12:50.394Z",
+      "source": "https://registry.npmjs.org/eslint-plugin-react-refresh"
+    },
+    {
+      "name": "eslint-scope",
+      "version": "9.1.2",
+      "published": "2026-03-06T22:32:49.946Z",
+      "source": "https://registry.npmjs.org/eslint-scope"
+    },
+    {
+      "name": "eslint-visitor-keys",
+      "version": "3.4.3",
+      "published": "2023-08-11T14:49:54.383Z",
+      "source": "https://registry.npmjs.org/eslint-visitor-keys"
+    },
+    {
+      "name": "eslint-visitor-keys",
+      "version": "5.0.1",
+      "published": "2026-02-20T14:40:47.824Z",
+      "source": "https://registry.npmjs.org/eslint-visitor-keys"
+    },
+    {
+      "name": "eslint",
+      "version": "10.11.0",
+      "published": "2026-09-18T20:15:36.485Z",
+      "source": "https://registry.npmjs.org/eslint"
+    },
+    {
+      "name": "espree",
+      "version": "11.2.0",
+      "published": "2026-03-06T22:32:40.951Z",
+      "source": "https://registry.npmjs.org/espree"
+    },
+    {
+      "name": "esquery",
+      "version": "1.7.0",
+      "published": "2025-12-31T15:44:57.664Z",
+      "source": "https://registry.npmjs.org/esquery"
+    },
+    {
+      "name": "esrecurse",
+      "version": "4.3.0",
+      "published": "2020-08-31T18:21:44.794Z",
+      "source": "https://registry.npmjs.org/esrecurse"
+    },
+    {
+      "name": "estraverse",
+      "version": "5.3.0",
+      "published": "2021-10-25T12:18:17.722Z",
+      "source": "https://registry.npmjs.org/estraverse"
+    },
+    {
+      "name": "estree-walker",
+      "version": "3.0.3",
+      "published": "2023-01-20T02:27:12.467Z",
+      "source": "https://registry.npmjs.org/estree-walker"
+    },
+    {
+      "name": "esutils",
+      "version": "2.0.3",
+      "published": "2019-07-31T01:10:54.228Z",
+      "source": "https://registry.npmjs.org/esutils"
+    },
+    {
+      "name": "expect-type",
+      "version": "1.4.0",
+      "published": "2026-06-25T13:41:23.573Z",
+      "source": "https://registry.npmjs.org/expect-type"
+    },
+    {
+      "name": "fast-deep-equal",
+      "version": "3.1.3",
+      "published": "2020-06-08T07:27:28.474Z",
+      "source": "https://registry.npmjs.org/fast-deep-equal"
+    },
+    {
+      "name": "fast-json-stable-stringify",
+      "version": "2.1.0",
+      "published": "2019-12-14T16:17:57.583Z",
+      "source": "https://registry.npmjs.org/fast-json-stable-stringify"
+    },
+    {
+      "name": "fast-levenshtein",
+      "version": "2.0.6",
+      "published": "2016-12-27T21:15:07.820Z",
+      "source": "https://registry.npmjs.org/fast-levenshtein"
+    },
+    {
+      "name": "fdir",
+      "version": "6.5.0",
+      "published": "2025-08-14T16:56:03.948Z",
+      "source": "https://registry.npmjs.org/fdir"
+    },
+    {
+      "name": "file-entry-cache",
+      "version": "11.1.5",
+      "published": "2026-06-27T18:20:33.507Z",
+      "source": "https://registry.npmjs.org/file-entry-cache"
+    },
+    {
+      "name": "find-up",
+      "version": "5.0.0",
+      "published": "2020-08-11T18:44:24.748Z",
+      "source": "https://registry.npmjs.org/find-up"
+    },
+    {
+      "name": "flat-cache",
+      "version": "6.1.23",
+      "published": "2026-06-27T18:20:27.613Z",
+      "source": "https://registry.npmjs.org/flat-cache"
+    },
+    {
+      "name": "flatted",
+      "version": "3.4.4",
+      "published": "2026-07-30T09:53:10.155Z",
+      "source": "https://registry.npmjs.org/flatted"
+    },
+    {
+      "name": "fsevents",
+      "version": "2.3.3",
+      "published": "2023-08-21T16:24:22.854Z",
+      "source": "https://registry.npmjs.org/fsevents"
+    },
+    {
+      "name": "gensync",
+      "version": "1.0.0-beta.2",
+      "published": "2020-10-27T20:43:40.443Z",
+      "source": "https://registry.npmjs.org/gensync"
+    },
+    {
+      "name": "glob-parent",
+      "version": "6.0.2",
+      "published": "2021-09-29T22:14:24.467Z",
+      "source": "https://registry.npmjs.org/glob-parent"
+    },
+    {
+      "name": "globals",
+      "version": "17.12.0",
+      "published": "2026-09-01T11:00:43.545Z",
+      "source": "https://registry.npmjs.org/globals"
+    },
+    {
+      "name": "graceful-fs",
+      "version": "4.2.11",
+      "published": "2023-03-16T19:30:19.323Z",
+      "source": "https://registry.npmjs.org/graceful-fs"
+    },
+    {
+      "name": "hashery",
+      "version": "1.5.1",
+      "published": "2026-03-21T18:01:50.476Z",
+      "source": "https://registry.npmjs.org/hashery"
+    },
+    {
+      "name": "hermes-estree",
+      "version": "0.25.1",
+      "published": "2024-11-12T01:38:51.996Z",
+      "source": "https://registry.npmjs.org/hermes-estree"
+    },
+    {
+      "name": "hermes-parser",
+      "version": "0.25.1",
+      "published": "2024-11-12T01:39:43.468Z",
+      "source": "https://registry.npmjs.org/hermes-parser"
+    },
+    {
+      "name": "hookified",
+      "version": "1.15.1",
+      "published": "2026-01-31T20:19:44.222Z",
+      "source": "https://registry.npmjs.org/hookified"
+    },
+    {
+      "name": "hookified",
+      "version": "2.2.0",
+      "published": "2026-04-26T22:05:22.580Z",
+      "source": "https://registry.npmjs.org/hookified"
+    },
+    {
+      "name": "html-encoding-sniffer",
+      "version": "6.0.0",
+      "published": "2025-12-26T03:54:44.115Z",
+      "source": "https://registry.npmjs.org/html-encoding-sniffer"
+    },
+    {
+      "name": "http-proxy-agent",
+      "version": "7.0.2",
+      "published": "2024-02-15T19:14:20.532Z",
+      "source": "https://registry.npmjs.org/http-proxy-agent"
+    },
+    {
+      "name": "https-proxy-agent",
+      "version": "7.0.6",
+      "published": "2024-12-07T03:32:09.302Z",
+      "source": "https://registry.npmjs.org/https-proxy-agent"
+    },
+    {
+      "name": "ignore",
+      "version": "5.3.2",
+      "published": "2024-08-12T08:51:00.065Z",
+      "source": "https://registry.npmjs.org/ignore"
+    },
+    {
+      "name": "ignore",
+      "version": "7.0.9",
+      "published": "2026-09-08T13:06:01.328Z",
+      "source": "https://registry.npmjs.org/ignore"
+    },
+    {
+      "name": "imurmurhash",
+      "version": "0.1.4",
+      "published": "2013-08-24T20:45:23.169Z",
+      "source": "https://registry.npmjs.org/imurmurhash"
+    },
+    {
+      "name": "indent-string",
+      "version": "4.0.0",
+      "published": "2019-04-17T07:31:13.363Z",
+      "source": "https://registry.npmjs.org/indent-string"
+    },
+    {
+      "name": "is-extglob",
+      "version": "2.1.1",
+      "published": "2016-12-11T04:04:24.390Z",
+      "source": "https://registry.npmjs.org/is-extglob"
+    },
+    {
+      "name": "is-glob",
+      "version": "4.0.3",
+      "published": "2021-09-29T16:52:47.977Z",
+      "source": "https://registry.npmjs.org/is-glob"
+    },
+    {
+      "name": "is-potential-custom-element-name",
+      "version": "1.0.1",
+      "published": "2021-04-07T07:43:00.708Z",
+      "source": "https://registry.npmjs.org/is-potential-custom-element-name"
+    },
+    {
+      "name": "isexe",
+      "version": "2.0.0",
+      "published": "2017-03-23T00:53:16.356Z",
+      "source": "https://registry.npmjs.org/isexe"
+    },
+    {
+      "name": "jiti",
+      "version": "2.7.0",
+      "published": "2026-05-05T21:02:47.918Z",
+      "source": "https://registry.npmjs.org/jiti"
+    },
+    {
+      "name": "js-tokens",
+      "version": "4.0.0",
+      "published": "2018-01-28T11:58:58.170Z",
+      "source": "https://registry.npmjs.org/js-tokens"
+    },
+    {
+      "name": "jsdom",
+      "version": "27.4.0",
+      "published": "2025-12-26T10:56:39.553Z",
+      "source": "https://registry.npmjs.org/jsdom"
+    },
+    {
+      "name": "jsesc",
+      "version": "3.1.0",
+      "published": "2024-12-11T08:24:34.551Z",
+      "source": "https://registry.npmjs.org/jsesc"
+    },
+    {
+      "name": "json-schema-traverse",
+      "version": "0.4.1",
+      "published": "2018-06-10T08:42:05.056Z",
+      "source": "https://registry.npmjs.org/json-schema-traverse"
+    },
+    {
+      "name": "json-stable-stringify-without-jsonify",
+      "version": "1.0.1",
+      "published": "2016-12-15T22:00:35.805Z",
+      "source": "https://registry.npmjs.org/json-stable-stringify-without-jsonify"
+    },
+    {
+      "name": "json5",
+      "version": "2.2.3",
+      "published": "2022-12-31T17:11:32.047Z",
+      "source": "https://registry.npmjs.org/json5"
+    },
+    {
+      "name": "keyv",
+      "version": "5.6.0",
+      "published": "2026-01-21T00:39:26.982Z",
+      "source": "https://registry.npmjs.org/keyv"
+    },
+    {
+      "name": "levn",
+      "version": "0.4.1",
+      "published": "2020-04-04T02:05:31.527Z",
+      "source": "https://registry.npmjs.org/levn"
+    },
+    {
+      "name": "lightningcss-android-arm64",
+      "version": "1.32.0",
+      "published": "2026-03-09T04:23:04.650Z",
+      "source": "https://registry.npmjs.org/lightningcss-android-arm64"
+    },
+    {
+      "name": "lightningcss-android-arm64",
+      "version": "1.33.0",
+      "published": "2026-07-20T05:10:36.404Z",
+      "source": "https://registry.npmjs.org/lightningcss-android-arm64"
+    },
+    {
+      "name": "lightningcss-darwin-arm64",
+      "version": "1.32.0",
+      "published": "2026-03-09T04:23:07.357Z",
+      "source": "https://registry.npmjs.org/lightningcss-darwin-arm64"
+    },
+    {
+      "name": "lightningcss-darwin-arm64",
+      "version": "1.33.0",
+      "published": "2026-07-20T05:10:38.380Z",
+      "source": "https://registry.npmjs.org/lightningcss-darwin-arm64"
+    },
+    {
+      "name": "lightningcss-darwin-x64",
+      "version": "1.32.0",
+      "published": "2026-03-09T04:23:10.192Z",
+      "source": "https://registry.npmjs.org/lightningcss-darwin-x64"
+    },
+    {
+      "name": "lightningcss-darwin-x64",
+      "version": "1.33.0",
+      "published": "2026-07-20T05:10:40.758Z",
+      "source": "https://registry.npmjs.org/lightningcss-darwin-x64"
+    },
+    {
+      "name": "lightningcss-freebsd-x64",
+      "version": "1.32.0",
+      "published": "2026-03-09T04:23:12.887Z",
+      "source": "https://registry.npmjs.org/lightningcss-freebsd-x64"
+    },
+    {
+      "name": "lightningcss-freebsd-x64",
+      "version": "1.33.0",
+      "published": "2026-07-20T05:10:43.067Z",
+      "source": "https://registry.npmjs.org/lightningcss-freebsd-x64"
+    },
+    {
+      "name": "lightningcss-linux-arm-gnueabihf",
+      "version": "1.32.0",
+      "published": "2026-03-09T04:23:15.620Z",
+      "source": "https://registry.npmjs.org/lightningcss-linux-arm-gnueabihf"
+    },
+    {
+      "name": "lightningcss-linux-arm-gnueabihf",
+      "version": "1.33.0",
+      "published": "2026-07-20T05:10:45.198Z",
+      "source": "https://registry.npmjs.org/lightningcss-linux-arm-gnueabihf"
+    },
+    {
+      "name": "lightningcss-linux-arm64-gnu",
+      "version": "1.32.0",
+      "published": "2026-03-09T04:23:18.594Z",
+      "source": "https://registry.npmjs.org/lightningcss-linux-arm64-gnu"
+    },
+    {
+      "name": "lightningcss-linux-arm64-gnu",
+      "version": "1.33.0",
+      "published": "2026-07-20T05:10:47.355Z",
+      "source": "https://registry.npmjs.org/lightningcss-linux-arm64-gnu"
+    },
+    {
+      "name": "lightningcss-linux-arm64-musl",
+      "version": "1.32.0",
+      "published": "2026-03-09T04:23:21.203Z",
+      "source": "https://registry.npmjs.org/lightningcss-linux-arm64-musl"
+    },
+    {
+      "name": "lightningcss-linux-arm64-musl",
+      "version": "1.33.0",
+      "published": "2026-07-20T05:10:49.830Z",
+      "source": "https://registry.npmjs.org/lightningcss-linux-arm64-musl"
+    },
+    {
+      "name": "lightningcss-linux-x64-gnu",
+      "version": "1.32.0",
+      "published": "2026-03-09T04:23:24.274Z",
+      "source": "https://registry.npmjs.org/lightningcss-linux-x64-gnu"
+    },
+    {
+      "name": "lightningcss-linux-x64-gnu",
+      "version": "1.33.0",
+      "published": "2026-07-20T05:10:52.507Z",
+      "source": "https://registry.npmjs.org/lightningcss-linux-x64-gnu"
+    },
+    {
+      "name": "lightningcss-linux-x64-musl",
+      "version": "1.32.0",
+      "published": "2026-03-09T04:23:27.400Z",
+      "source": "https://registry.npmjs.org/lightningcss-linux-x64-musl"
+    },
+    {
+      "name": "lightningcss-linux-x64-musl",
+      "version": "1.33.0",
+      "published": "2026-07-20T05:10:54.935Z",
+      "source": "https://registry.npmjs.org/lightningcss-linux-x64-musl"
+    },
+    {
+      "name": "lightningcss-win32-arm64-msvc",
+      "version": "1.32.0",
+      "published": "2026-03-09T04:23:30.176Z",
+      "source": "https://registry.npmjs.org/lightningcss-win32-arm64-msvc"
+    },
+    {
+      "name": "lightningcss-win32-arm64-msvc",
+      "version": "1.33.0",
+      "published": "2026-07-20T05:10:57.219Z",
+      "source": "https://registry.npmjs.org/lightningcss-win32-arm64-msvc"
+    },
+    {
+      "name": "lightningcss-win32-x64-msvc",
+      "version": "1.32.0",
+      "published": "2026-03-09T04:23:33.073Z",
+      "source": "https://registry.npmjs.org/lightningcss-win32-x64-msvc"
+    },
+    {
+      "name": "lightningcss-win32-x64-msvc",
+      "version": "1.33.0",
+      "published": "2026-07-20T05:10:59.727Z",
+      "source": "https://registry.npmjs.org/lightningcss-win32-x64-msvc"
+    },
+    {
+      "name": "lightningcss",
+      "version": "1.32.0",
+      "published": "2026-03-09T04:23:43.754Z",
+      "source": "https://registry.npmjs.org/lightningcss"
+    },
+    {
+      "name": "lightningcss",
+      "version": "1.33.0",
+      "published": "2026-07-20T05:11:09.509Z",
+      "source": "https://registry.npmjs.org/lightningcss"
+    },
+    {
+      "name": "locate-path",
+      "version": "6.0.0",
+      "published": "2020-08-10T17:49:10.766Z",
+      "source": "https://registry.npmjs.org/locate-path"
+    },
+    {
+      "name": "lru-cache",
+      "version": "11.5.3",
+      "published": "2026-09-18T23:46:33.023Z",
+      "source": "https://registry.npmjs.org/lru-cache"
+    },
+    {
+      "name": "lru-cache",
+      "version": "5.1.1",
+      "published": "2018-11-21T01:44:45.407Z",
+      "source": "https://registry.npmjs.org/lru-cache"
+    },
+    {
+      "name": "lz-string",
+      "version": "1.5.0",
+      "published": "2023-03-04T08:24:59.879Z",
+      "source": "https://registry.npmjs.org/lz-string"
+    },
+    {
+      "name": "magic-string",
+      "version": "0.30.21",
+      "published": "2025-10-24T00:59:47.122Z",
+      "source": "https://registry.npmjs.org/magic-string"
+    },
+    {
+      "name": "mdn-data",
+      "version": "2.27.1",
+      "published": "2026-02-13T22:41:03.295Z",
+      "source": "https://registry.npmjs.org/mdn-data"
+    },
+    {
+      "name": "min-indent",
+      "version": "1.0.1",
+      "published": "2020-05-28T19:20:06.032Z",
+      "source": "https://registry.npmjs.org/min-indent"
+    },
+    {
+      "name": "minimatch",
+      "version": "10.2.6",
+      "published": "2026-07-27T19:00:09.469Z",
+      "source": "https://registry.npmjs.org/minimatch"
+    },
+    {
+      "name": "ms",
+      "version": "2.1.3",
+      "published": "2020-12-08T13:54:35.223Z",
+      "source": "https://registry.npmjs.org/ms"
+    },
+    {
+      "name": "nanoid",
+      "version": "3.3.19",
+      "published": "2026-09-10T18:00:48.080Z",
+      "source": "https://registry.npmjs.org/nanoid"
+    },
+    {
+      "name": "natural-compare",
+      "version": "1.4.0",
+      "published": "2016-07-22T20:48:12.217Z",
+      "source": "https://registry.npmjs.org/natural-compare"
+    },
+    {
+      "name": "node-releases",
+      "version": "2.0.56",
+      "published": "2026-09-17T08:38:07.147Z",
+      "source": "https://registry.npmjs.org/node-releases"
+    },
+    {
+      "name": "obug",
+      "version": "2.2.1",
+      "published": "2026-09-09T05:52:50.666Z",
+      "source": "https://registry.npmjs.org/obug"
+    },
+    {
+      "name": "optionator",
+      "version": "0.9.4",
+      "published": "2024-04-26T22:17:51.408Z",
+      "source": "https://registry.npmjs.org/optionator"
+    },
+    {
+      "name": "p-limit",
+      "version": "3.1.0",
+      "published": "2020-11-25T07:42:37.364Z",
+      "source": "https://registry.npmjs.org/p-limit"
+    },
+    {
+      "name": "p-locate",
+      "version": "5.0.0",
+      "published": "2020-08-10T17:42:34.692Z",
+      "source": "https://registry.npmjs.org/p-locate"
+    },
+    {
+      "name": "parse5",
+      "version": "8.0.1",
+      "published": "2026-04-19T20:16:16.612Z",
+      "source": "https://registry.npmjs.org/parse5"
+    },
+    {
+      "name": "path-exists",
+      "version": "4.0.0",
+      "published": "2019-04-04T03:29:16.887Z",
+      "source": "https://registry.npmjs.org/path-exists"
+    },
+    {
+      "name": "path-key",
+      "version": "3.1.1",
+      "published": "2019-11-22T16:47:18.153Z",
+      "source": "https://registry.npmjs.org/path-key"
+    },
+    {
+      "name": "pathe",
+      "version": "2.0.3",
+      "published": "2025-02-11T19:47:35.862Z",
+      "source": "https://registry.npmjs.org/pathe"
+    },
+    {
+      "name": "picocolors",
+      "version": "1.1.1",
+      "published": "2024-10-16T18:20:03.921Z",
+      "source": "https://registry.npmjs.org/picocolors"
+    },
+    {
+      "name": "picomatch",
+      "version": "4.0.7",
+      "published": "2026-08-24T14:36:23.690Z",
+      "source": "https://registry.npmjs.org/picomatch"
+    },
+    {
+      "name": "postcss",
+      "version": "8.5.28",
+      "published": "2026-09-03T15:13:59.819Z",
+      "source": "https://registry.npmjs.org/postcss"
+    },
+    {
+      "name": "prelude-ls",
+      "version": "1.2.1",
+      "published": "2020-04-02T22:53:40.710Z",
+      "source": "https://registry.npmjs.org/prelude-ls"
+    },
+    {
+      "name": "prettier",
+      "version": "3.9.8",
+      "published": "2026-09-17T21:41:05.085Z",
+      "source": "https://registry.npmjs.org/prettier"
+    },
+    {
+      "name": "pretty-format",
+      "version": "27.5.1",
+      "published": "2022-02-08T10:52:12.132Z",
+      "source": "https://registry.npmjs.org/pretty-format"
+    },
+    {
+      "name": "punycode",
+      "version": "2.3.1",
+      "published": "2023-10-30T18:28:32.512Z",
+      "source": "https://registry.npmjs.org/punycode"
+    },
+    {
+      "name": "qified",
+      "version": "0.10.1",
+      "published": "2026-04-24T22:37:10.101Z",
+      "source": "https://registry.npmjs.org/qified"
+    },
+    {
+      "name": "react-dom",
+      "version": "19.3.0",
+      "published": "2026-09-09T17:17:39.744Z",
+      "source": "https://registry.npmjs.org/react-dom"
+    },
+    {
+      "name": "react-is",
+      "version": "17.0.2",
+      "published": "2021-03-22T21:56:47.976Z",
+      "source": "https://registry.npmjs.org/react-is"
+    },
+    {
+      "name": "react-router",
+      "version": "7.18.4",
+      "published": "2026-09-15T15:08:29.127Z",
+      "source": "https://registry.npmjs.org/react-router"
+    },
+    {
+      "name": "react",
+      "version": "19.3.0",
+      "published": "2026-09-09T17:21:30.071Z",
+      "source": "https://registry.npmjs.org/react"
+    },
+    {
+      "name": "redent",
+      "version": "3.0.0",
+      "published": "2019-04-26T06:38:25.407Z",
+      "source": "https://registry.npmjs.org/redent"
+    },
+    {
+      "name": "require-from-string",
+      "version": "2.0.2",
+      "published": "2018-04-09T09:49:47.301Z",
+      "source": "https://registry.npmjs.org/require-from-string"
+    },
+    {
+      "name": "rolldown",
+      "version": "1.2.9",
+      "published": "2026-09-16T13:28:26.312Z",
+      "source": "https://registry.npmjs.org/rolldown"
+    },
+    {
+      "name": "saxes",
+      "version": "6.0.0",
+      "published": "2021-11-07T19:06:31.264Z",
+      "source": "https://registry.npmjs.org/saxes"
+    },
+    {
+      "name": "scheduler",
+      "version": "0.28.0",
+      "published": "2026-09-09T17:17:30.281Z",
+      "source": "https://registry.npmjs.org/scheduler"
+    },
+    {
+      "name": "semver",
+      "version": "6.3.1",
+      "published": "2023-07-10T22:38:41.428Z",
+      "source": "https://registry.npmjs.org/semver"
+    },
+    {
+      "name": "semver",
+      "version": "7.8.5",
+      "published": "2026-06-19T18:32:48.972Z",
+      "source": "https://registry.npmjs.org/semver"
+    },
+    {
+      "name": "set-cookie-parser",
+      "version": "2.7.2",
+      "published": "2025-10-27T19:50:59.587Z",
+      "source": "https://registry.npmjs.org/set-cookie-parser"
+    },
+    {
+      "name": "shebang-command",
+      "version": "2.0.0",
+      "published": "2019-09-06T14:53:25.901Z",
+      "source": "https://registry.npmjs.org/shebang-command"
+    },
+    {
+      "name": "shebang-regex",
+      "version": "3.0.0",
+      "published": "2019-04-27T10:46:19.256Z",
+      "source": "https://registry.npmjs.org/shebang-regex"
+    },
+    {
+      "name": "siginfo",
+      "version": "2.0.0",
+      "published": "2020-06-16T20:30:23.515Z",
+      "source": "https://registry.npmjs.org/siginfo"
+    },
+    {
+      "name": "source-map-js",
+      "version": "1.2.1",
+      "published": "2024-09-08T16:22:55.645Z",
+      "source": "https://registry.npmjs.org/source-map-js"
+    },
+    {
+      "name": "stackback",
+      "version": "0.0.2",
+      "published": "2012-10-20T00:56:54.591Z",
+      "source": "https://registry.npmjs.org/stackback"
+    },
+    {
+      "name": "std-env",
+      "version": "4.2.0",
+      "published": "2026-07-07T21:30:47.325Z",
+      "source": "https://registry.npmjs.org/std-env"
+    },
+    {
+      "name": "strip-indent",
+      "version": "3.0.0",
+      "published": "2019-04-17T02:21:49.701Z",
+      "source": "https://registry.npmjs.org/strip-indent"
+    },
+    {
+      "name": "symbol-tree",
+      "version": "3.2.4",
+      "published": "2019-06-12T18:10:21.305Z",
+      "source": "https://registry.npmjs.org/symbol-tree"
+    },
+    {
+      "name": "tailwindcss",
+      "version": "4.3.3",
+      "published": "2026-07-16T12:03:35.267Z",
+      "source": "https://registry.npmjs.org/tailwindcss"
+    },
+    {
+      "name": "tapable",
+      "version": "2.3.3",
+      "published": "2026-04-21T13:37:30.215Z",
+      "source": "https://registry.npmjs.org/tapable"
+    },
+    {
+      "name": "tinybench",
+      "version": "2.9.0",
+      "published": "2024-08-02T15:09:44.961Z",
+      "source": "https://registry.npmjs.org/tinybench"
+    },
+    {
+      "name": "tinyexec",
+      "version": "1.3.1",
+      "published": "2026-09-03T08:50:07.324Z",
+      "source": "https://registry.npmjs.org/tinyexec"
+    },
+    {
+      "name": "tinyglobby",
+      "version": "0.2.17",
+      "published": "2026-05-30T19:57:21.717Z",
+      "source": "https://registry.npmjs.org/tinyglobby"
+    },
+    {
+      "name": "tinyrainbow",
+      "version": "3.1.1",
+      "published": "2026-07-28T11:07:41.570Z",
+      "source": "https://registry.npmjs.org/tinyrainbow"
+    },
+    {
+      "name": "tldts-core",
+      "version": "7.4.14",
+      "published": "2026-09-21T19:50:21.345Z",
+      "source": "https://registry.npmjs.org/tldts-core"
+    },
+    {
+      "name": "tldts",
+      "version": "7.4.14",
+      "published": "2026-09-21T19:50:30.310Z",
+      "source": "https://registry.npmjs.org/tldts"
+    },
+    {
+      "name": "tough-cookie",
+      "version": "6.0.2",
+      "published": "2026-07-07T18:32:22.813Z",
+      "source": "https://registry.npmjs.org/tough-cookie"
+    },
+    {
+      "name": "tr46",
+      "version": "6.0.0",
+      "published": "2025-09-18T00:42:31.639Z",
+      "source": "https://registry.npmjs.org/tr46"
+    },
+    {
+      "name": "ts-api-utils",
+      "version": "2.5.0",
+      "published": "2026-03-19T02:50:49.789Z",
+      "source": "https://registry.npmjs.org/ts-api-utils"
+    },
+    {
+      "name": "tslib",
+      "version": "2.8.1",
+      "published": "2024-10-31T22:42:48.624Z",
+      "source": "https://registry.npmjs.org/tslib"
+    },
+    {
+      "name": "type-check",
+      "version": "0.4.0",
+      "published": "2020-04-03T03:02:37.249Z",
+      "source": "https://registry.npmjs.org/type-check"
+    },
+    {
+      "name": "typescript-eslint",
+      "version": "8.70.1",
+      "published": "2026-09-21T17:07:55.524Z",
+      "source": "https://registry.npmjs.org/typescript-eslint"
+    },
+    {
+      "name": "typescript",
+      "version": "5.9.3",
+      "published": "2025-09-30T21:19:38.784Z",
+      "source": "https://registry.npmjs.org/typescript"
+    },
+    {
+      "name": "undici-types",
+      "version": "7.18.2",
+      "published": "2026-01-06T15:57:40.133Z",
+      "source": "https://registry.npmjs.org/undici-types"
+    },
+    {
+      "name": "update-browserslist-db",
+      "version": "1.3.3",
+      "published": "2026-09-10T17:39:26.423Z",
+      "source": "https://registry.npmjs.org/update-browserslist-db"
+    },
+    {
+      "name": "uri-js",
+      "version": "4.4.1",
+      "published": "2021-01-10T00:43:12.666Z",
+      "source": "https://registry.npmjs.org/uri-js"
+    },
+    {
+      "name": "vite",
+      "version": "8.3.0",
+      "published": "2026-09-10T11:30:26.283Z",
+      "source": "https://registry.npmjs.org/vite"
+    },
+    {
+      "name": "vitest",
+      "version": "4.1.11",
+      "published": "2026-08-18T14:27:07.240Z",
+      "source": "https://registry.npmjs.org/vitest"
+    },
+    {
+      "name": "w3c-xmlserializer",
+      "version": "5.0.0",
+      "published": "2023-11-12T07:59:26.966Z",
+      "source": "https://registry.npmjs.org/w3c-xmlserializer"
+    },
+    {
+      "name": "webidl-conversions",
+      "version": "8.0.1",
+      "published": "2026-01-02T12:56:45.580Z",
+      "source": "https://registry.npmjs.org/webidl-conversions"
+    },
+    {
+      "name": "whatwg-mimetype",
+      "version": "4.0.0",
+      "published": "2023-11-11T07:43:44.007Z",
+      "source": "https://registry.npmjs.org/whatwg-mimetype"
+    },
+    {
+      "name": "whatwg-mimetype",
+      "version": "5.0.0",
+      "published": "2026-01-20T03:04:38.058Z",
+      "source": "https://registry.npmjs.org/whatwg-mimetype"
+    },
+    {
+      "name": "whatwg-url",
+      "version": "15.1.0",
+      "published": "2025-09-18T00:51:00.815Z",
+      "source": "https://registry.npmjs.org/whatwg-url"
+    },
+    {
+      "name": "which",
+      "version": "2.0.2",
+      "published": "2019-11-18T22:26:15.325Z",
+      "source": "https://registry.npmjs.org/which"
+    },
+    {
+      "name": "why-is-node-running",
+      "version": "2.3.0",
+      "published": "2024-07-08T12:57:23.951Z",
+      "source": "https://registry.npmjs.org/why-is-node-running"
+    },
+    {
+      "name": "word-wrap",
+      "version": "1.2.5",
+      "published": "2023-07-22T14:37:38.795Z",
+      "source": "https://registry.npmjs.org/word-wrap"
+    },
+    {
+      "name": "ws",
+      "version": "8.21.3",
+      "published": "2026-08-07T14:10:25.816Z",
+      "source": "https://registry.npmjs.org/ws"
+    },
+    {
+      "name": "xml-name-validator",
+      "version": "5.0.0",
+      "published": "2023-11-12T05:38:09.927Z",
+      "source": "https://registry.npmjs.org/xml-name-validator"
+    },
+    {
+      "name": "xmlchars",
+      "version": "2.2.0",
+      "published": "2019-09-06T16:38:51.976Z",
+      "source": "https://registry.npmjs.org/xmlchars"
+    },
+    {
+      "name": "yallist",
+      "version": "3.1.1",
+      "published": "2019-09-30T20:07:18.343Z",
+      "source": "https://registry.npmjs.org/yallist"
+    },
+    {
+      "name": "yocto-queue",
+      "version": "0.1.0",
+      "published": "2020-11-24T06:05:35.875Z",
+      "source": "https://registry.npmjs.org/yocto-queue"
+    },
+    {
+      "name": "zod-validation-error",
+      "version": "4.0.2",
+      "published": "2025-09-19T07:40:57.236Z",
+      "source": "https://registry.npmjs.org/zod-validation-error"
+    },
+    {
+      "name": "zod",
+      "version": "4.6.5",
+      "published": "2026-09-13T23:25:14.644Z",
+      "source": "https://registry.npmjs.org/zod"
+    }
+  ]
+}
