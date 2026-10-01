@@ -1,3 +1,4 @@
+import { useLanguage } from '@/i18n/context'
 import { useState } from 'react'
 import { traceFixedWindow, traceUniqueWindow } from './trace'
 
@@ -5,27 +6,31 @@ const values = [2, 1, 5, 1, 3, 2]
 const text = 'abcaac'
 
 export function WindowVisualizer({ mode }: { mode: 'fixed' | 'unique' }) {
+  const { t } = useLanguage()
+
   const [size, setSize] = useState(3)
   const [stepIndex, setStepIndex] = useState(0)
   const fixed = mode === 'fixed'
   const items = fixed ? values : [...text]
-  const steps = fixed ? traceFixedWindow(values, size) : traceUniqueWindow(text)
+  const steps = fixed
+    ? traceFixedWindow(values, size, t)
+    : traceUniqueWindow(text, t)
   const step = steps[stepIndex]!
   const complete = stepIndex === steps.length - 1
   return (
     <section
       className="visualizer"
-      aria-label={
+      aria-label={t(
         fixed
           ? 'Interactive fixed-size window'
-          : 'Interactive unique-character window'
-      }
+          : 'Interactive unique-character window',
+      )}
     >
       <div className="section-topline">
-        <span className="eyebrow">See it happen</span>
+        <span className="eyebrow">{t('See it happen')}</span>
         {fixed ? (
           <label className="target-select">
-            Window size
+            {t('Window size ')}
             <select
               value={size}
               onChange={(event) => {
@@ -33,14 +38,14 @@ export function WindowVisualizer({ mode }: { mode: 'fixed' | 'unique' }) {
                 setStepIndex(0)
               }}
             >
-              <option value={3}>3 items</option>
-              <option value={2}>2 items</option>
-              <option value={6}>6 · whole array</option>
+              <option value={3}>{t('3 items')}</option>
+              <option value={2}>{t('2 items')}</option>
+              <option value={6}>{t('6 · whole array')}</option>
             </select>
           </label>
         ) : (
           <span className={`window-state ${step.valid ? 'valid' : 'invalid'}`}>
-            {step.valid ? 'Unique · can measure' : 'Repeat · must shrink'}
+            {t(step.valid ? 'Unique · can measure' : 'Repeat · must shrink')}
           </span>
         )}
       </div>
@@ -68,28 +73,38 @@ export function WindowVisualizer({ mode }: { mode: 'fixed' | 'unique' }) {
       </div>
       <div className="window-metrics">
         <span>
-          Current {fixed ? 'sum' : 'length'} <b>{step.value}</b>
+          {t(fixed ? 'Current sum' : 'Current length')} <b>{step.value}</b>
         </span>
         <span>
-          Best {fixed ? 'sum' : 'length'} <b>{step.best}</b>
+          {t(fixed ? 'Best sum' : 'Best length')} <b>{step.best}</b>
         </span>
       </div>
       <p className="trace-message" role="status">
         {step.message}
         {complete
-          ? ` Done. ${fixed ? 'Maximum sum' : 'Longest unique length'}: ${step.best}.`
+          ? t(
+              fixed
+                ? ' Done. Maximum sum: {best}.'
+                : ' Done. Longest unique length: {best}.',
+              { best: step.best },
+            )
           : ''}
       </p>
       {complete && (
         <p className="window-result">
-          Best window: [
-          {items.slice(step.bestLeft, step.bestRight + 1).join(', ')}] · indices{' '}
-          {step.bestLeft}–{step.bestRight}
+          {t('Best window: [{values}] · indices {left}–{right}', {
+            values: items.slice(step.bestLeft, step.bestRight + 1).join(', '),
+            left: step.bestLeft,
+            right: step.bestRight,
+          })}
         </p>
       )}
       <div className="visualizer-controls">
         <span className="small muted">
-          Step {stepIndex + 1} of {steps.length}
+          {t('Step {current} of {total}', {
+            current: stepIndex + 1,
+            total: steps.length,
+          })}
         </span>
         <div className="control-buttons">
           <button
@@ -97,11 +112,11 @@ export function WindowVisualizer({ mode }: { mode: 'fixed' | 'unique' }) {
             onClick={() => setStepIndex(0)}
             disabled={stepIndex === 0}
           >
-            Reset
+            {t('Reset ')}
           </button>
           <button
             className="icon-button"
-            aria-label="Previous step"
+            aria-label={t('Previous step')}
             onClick={() => setStepIndex((index) => index - 1)}
             disabled={stepIndex === 0}
           >
@@ -112,13 +127,14 @@ export function WindowVisualizer({ mode }: { mode: 'fixed' | 'unique' }) {
             onClick={() => setStepIndex((index) => index + 1)}
             disabled={complete}
           >
-            Next step <span aria-hidden="true">→</span>
+            {t('Next step ')}
+            <span aria-hidden="true">→</span>
           </button>
         </div>
       </div>
       <p className="legend">
-        L = left edge · R = right edge · colored cells = current window
-        {!fixed && ' · amber = repeat present'}
+        {t('L = left edge · R = right edge · colored cells = current window ')}
+        {!fixed && t(' · amber = repeat present')}
       </p>
     </section>
   )

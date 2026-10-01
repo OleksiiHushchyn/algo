@@ -1,3 +1,4 @@
+import { english, type Translate } from '@/i18n/messages'
 export type WindowStep = {
   left: number
   right: number
@@ -14,6 +15,7 @@ export type WindowStep = {
 export function traceFixedWindow(
   values: readonly number[],
   size: number,
+  t: Translate = english,
 ): WindowStep[] {
   if (!Number.isInteger(size) || size < 1 || size > values.length) {
     throw new RangeError(
@@ -44,15 +46,30 @@ export function traceFixedWindow(
       phase: 'slide',
       message:
         left === 0
-          ? `First ${size} items: sum = ${sum}. Save this as the best so far.`
-          : `${previousSum} − (${values[left - 1]}) + (${values[right]}) = ${sum}. One item out, one in. Best sum so far: ${best}.`,
+          ? t(
+              'First {size} items: sum = {sum}. Save this as the best so far.',
+              { size, sum },
+            )
+          : t(
+              '{previousSum} − ({value1}) + ({value2}) = {sum}. One item out, one in. Best sum so far: {best}.',
+              {
+                previousSum,
+                value1: values[left - 1],
+                value2: values[right],
+                sum,
+                best,
+              },
+            ),
     })
   }
   return steps
 }
 
 // Expand and shrink are separate frames so the reason for each move is visible.
-export function traceUniqueWindow(text: string): WindowStep[] {
+export function traceUniqueWindow(
+  text: string,
+  t: Translate = english,
+): WindowStep[] {
   const characters = [...text]
   const steps: WindowStep[] = []
   const count = new Map<string, number>()
@@ -91,8 +108,14 @@ export function traceUniqueWindow(text: string): WindowStep[] {
       right,
       'expand',
       count.get(character)! > 1
-        ? `Add “${character}”. It now repeats: shrink from the left before measuring.`
-        : `Add “${character}”. All characters are unique: measure this window.`,
+        ? t(
+            'Add “{character}”. It now repeats: shrink from the left before measuring.',
+            { character },
+          )
+        : t(
+            'Add “{character}”. All characters are unique: measure this window.',
+            { character },
+          ),
     )
     while (count.get(character)! > 1) {
       const removed = characters[left]!
@@ -102,8 +125,14 @@ export function traceUniqueWindow(text: string): WindowStep[] {
         right,
         'shrink',
         count.get(character)! > 1
-          ? `Remove “${removed}” from the left. “${character}” still repeats: shrink again.`
-          : `Remove “${removed}” from the left. The repeat is gone: measure the valid window.`,
+          ? t(
+              'Remove “{removed}” from the left. “{character}” still repeats: shrink again.',
+              { removed, character },
+            )
+          : t(
+              'Remove “{removed}” from the left. The repeat is gone: measure the valid window.',
+              { removed },
+            ),
       )
     }
   }
@@ -117,7 +146,7 @@ export function traceUniqueWindow(text: string): WindowStep[] {
       bestRight: -1,
       valid: true,
       phase: 'expand',
-      message: 'Empty text has no characters. Longest unique window: 0.',
+      message: t('Empty text has no characters. Longest unique window: 0.'),
     })
   }
   return steps

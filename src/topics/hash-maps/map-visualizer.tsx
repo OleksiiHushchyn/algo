@@ -1,3 +1,4 @@
+import { useLanguage } from '@/i18n/context'
 import { useState } from 'react'
 import { tracePair, tracePrefix } from './trace'
 
@@ -20,12 +21,14 @@ export function MapTable({
   columns: [string, string]
   entries: [string | number, string | number][]
 }) {
+  const { t } = useLanguage()
+
   return (
     <table className="hash-table">
       <thead>
         <tr>
-          <th scope="col">{columns[0]}</th>
-          <th scope="col">{columns[1]}</th>
+          <th scope="col">{t(columns[0])}</th>
+          <th scope="col">{t(columns[1])}</th>
         </tr>
       </thead>
       <tbody>
@@ -39,7 +42,7 @@ export function MapTable({
         ) : (
           <tr>
             <td colSpan={2} className="muted">
-              Empty map — nothing stored yet
+              {t('Empty map — nothing stored yet ')}
             </td>
           </tr>
         )}
@@ -49,27 +52,29 @@ export function MapTable({
 }
 
 export function MapVisualizer({ mode }: { mode: 'pair' | 'prefix' }) {
+  const { t } = useLanguage()
+
   const [exampleIndex, setExampleIndex] = useState(0)
   const [stepIndex, setStepIndex] = useState(0)
   const prefix = mode === 'prefix'
   const examples = prefix ? prefixExamples : pairExamples
   const example = examples[exampleIndex]!
   const steps = prefix
-    ? tracePrefix(example.values, example.target)
-    : tracePair(example.values, example.target)
+    ? tracePrefix(example.values, example.target, t)
+    : tracePair(example.values, example.target, t)
   const step = steps[stepIndex]!
   const complete = stepIndex === steps.length - 1
   return (
     <section
       className="visualizer"
-      aria-label={
-        prefix ? 'Interactive prefix-sum map' : 'Interactive pair lookup'
-      }
+      aria-label={t(
+        prefix ? 'Interactive prefix-sum map' : 'Interactive pair lookup',
+      )}
     >
       <div className="section-topline hash-controls-top">
-        <span className="eyebrow">See it happen</span>
+        <span className="eyebrow">{t('See it happen')}</span>
         <label className="target-select">
-          Example
+          {t('Example ')}
           <select
             value={exampleIndex}
             onChange={(event) => {
@@ -78,8 +83,8 @@ export function MapVisualizer({ mode }: { mode: 'pair' | 'prefix' }) {
             }}
           >
             {examples.map((item, index) => (
-              <option key={item.label} value={index}>
-                {item.label}
+              <option key={t(item.label)} value={index}>
+                {t(item.label)}
               </option>
             ))}
           </select>
@@ -97,9 +102,9 @@ export function MapVisualizer({ mode }: { mode: 'pair' | 'prefix' }) {
               </span>
               <span className="array-pointer">
                 {index === step.index
-                  ? 'now'
+                  ? t('now')
                   : step.pair?.includes(index)
-                    ? 'pair'
+                    ? t('pair')
                     : ''}
               </span>
             </div>
@@ -109,10 +114,12 @@ export function MapVisualizer({ mode }: { mode: 'pair' | 'prefix' }) {
       {prefix && (
         <div className="window-metrics">
           <span>
-            Prefix sum <b>{step.sum}</b>
+            {t('Prefix sum ')}
+            <b>{step.sum}</b>
           </span>
           <span>
-            Subarrays found <b>{step.answer}</b>
+            {t('Subarrays found ')}
+            <b>{step.answer}</b>
           </span>
         </div>
       )}
@@ -129,7 +136,10 @@ export function MapVisualizer({ mode }: { mode: 'pair' | 'prefix' }) {
       </p>
       <div className="visualizer-controls">
         <span className="small muted">
-          Step {stepIndex + 1} of {steps.length}
+          {t('Step {current} of {total}', {
+            current: stepIndex + 1,
+            total: steps.length,
+          })}
         </span>
         <div className="control-buttons">
           <button
@@ -137,11 +147,11 @@ export function MapVisualizer({ mode }: { mode: 'pair' | 'prefix' }) {
             onClick={() => setStepIndex(0)}
             disabled={stepIndex === 0}
           >
-            Reset
+            {t('Reset ')}
           </button>
           <button
             className="icon-button"
-            aria-label="Previous step"
+            aria-label={t('Previous step')}
             onClick={() => setStepIndex((index) => index - 1)}
             disabled={stepIndex === 0}
           >
@@ -152,15 +162,18 @@ export function MapVisualizer({ mode }: { mode: 'pair' | 'prefix' }) {
             onClick={() => setStepIndex((index) => index + 1)}
             disabled={complete}
           >
-            Next step <span aria-hidden="true">→</span>
+            {t('Next step ')}
+            <span aria-hidden="true">→</span>
           </button>
         </div>
       </div>
       <p className="legend">
-        {prefix
-          ? 'Purple = current item · pale cells = earlier items in the prefix'
-          : 'Purple = current item · green = matched pair'}{' '}
-        · table = stored key → value entries
+        {t(
+          prefix
+            ? 'Purple = current item · pale cells = earlier items in the prefix'
+            : 'Purple = current item · green = matched pair',
+        )}{' '}
+        {t('· table = stored key → value entries ')}
       </p>
     </section>
   )

@@ -1,12 +1,17 @@
+import { useLanguage } from '@/i18n/context'
 export function ContainerDiagram() {
+  const { t } = useLanguage()
+
   return (
     <figure className="static-diagram">
-      <span className="eyebrow">A tiny example</span>
+      <span className="eyebrow">{t('A tiny example')}</span>
       <svg
         className="lesson-svg"
         viewBox="0 0 360 150"
         role="img"
-        aria-label="Walls of heights 2, 7, 3, 6, 4. The first and last hold area 8; the walls at indices 1 and 4 hold area 12."
+        aria-label={t(
+          'Walls of heights 2, 7, 3, 6, 4. The first and last hold area 8; the walls at indices 1 and 4 hold area 12.',
+        )}
       >
         <rect x="92" y="74" width="204" height="52" fill="#e6def4" />
         {[2, 7, 3, 6, 4].map((height, index) => (
@@ -44,22 +49,27 @@ export function ContainerDiagram() {
         </text>
       </svg>
       <figcaption>
-        Start at the ends: 4 × min(2, 4) = 8. Move the short left wall. Now 3 ×
-        min(7, 4) = 12. Keep checking: the best area here is 12.
+        {t(
+          'Start at the ends: 4 × min(2, 4) = 8. Move the short left wall. Now 3 × min(7, 4) = 12. Keep checking: the best area here is 12. ',
+        )}
       </figcaption>
     </figure>
   )
 }
 
 export function CycleDiagram() {
+  const { t } = useLanguage()
+
   return (
     <figure className="static-diagram">
-      <span className="eyebrow">A tiny example</span>
+      <span className="eyebrow">{t('A tiny example')}</span>
       <svg
         className="lesson-svg"
         viewBox="0 0 360 140"
         role="img"
-        aria-label="A points to B, B to C, C to D, and D loops back to B. Slow and fast meet at D after three moves."
+        aria-label={t(
+          'A points to B, B to C, C to D, and D loops back to B. Slow and fast meet at D after three moves.',
+        )}
       >
         <defs>
           <marker
@@ -111,15 +121,16 @@ export function CycleDiagram() {
           </g>
         ))}
         <text x="45" y="12" textAnchor="middle" fontSize="10" fill="#797080">
-          head
+          {t('head ')}
         </text>
         <text x="211" y="121" textAnchor="middle" fontSize="11" fill="#797080">
-          D points back to B
+          {t('D points back to B ')}
         </text>
       </svg>
       <figcaption>
-        After each move, (slow, fast) is (B, C) → (C, B) → (D, D). Same node: a
-        cycle exists.
+        {t(
+          'After each move, (slow, fast) is (B, C) → (C, B) → (D, D). Same node: a cycle exists. ',
+        )}
       </figcaption>
     </figure>
   )

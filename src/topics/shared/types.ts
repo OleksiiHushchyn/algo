@@ -1,3 +1,6 @@
+import type { CodeExamples } from './code-examples'
+import type { LocalizedDetail } from './detailed-content'
+
 export type Pattern = {
   id: string
   title: string
@@ -7,6 +10,8 @@ export type Pattern = {
   idea: string
   steps: string[]
   code: string
+  codeExamples: CodeExamples
+  detailed: LocalizedDetail
   values: string[]
   highlight: number[]
   caption: string

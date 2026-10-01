@@ -7,6 +7,21 @@ and hash maps (8 patterns, 10 practice problems).
 Each has concise theory, pseudocode, diagrams,
 common traps, and official LeetCode links.
 
+Each example has two explanation modes. **Compact** keeps the original quick notes.
+**Detailed** adds an everyday analogy, a worked example, why the algorithm works,
+and a plain-language guide to its code variables. All 30 detailed lessons are
+available in English, Ukrainian, and Russian. The shared preference is saved under
+`algo.explanationMode`, independently of the interface and code languages.
+Switching modes preserves the current pattern and walkthrough step.
+
+All 30 examples include Pseudocode, JavaScript, and Java in the code selector.
+The choice is shared across topics and saved as `algo.codeLanguage` in local storage,
+independently of the interface language. If storage is unavailable, the choice still
+works for the current session. Java examples include a `Solution` class and imports;
+call the shown static method from your own `main` or tests. The examples implement
+the lesson's pattern; related practice problems may need the adaptations noted in
+the lesson. String examples use UTF-16 indexing and basic letters, not grapheme clusters.
+
 Binary search’s exact-match pattern includes a step-through visualizer for a match, a missing
 target, and an edge value. Two pointers includes an interactive sorted-pair search, plus diagrams for linked-list
 cycles and container area. Sliding window includes separate walkthroughs for a fixed-size
@@ -35,6 +50,25 @@ Link directly to a pattern, for example
 `/#/topics/sliding-window?pattern=unique`.
 Dependencies are locked in `package-lock.json`; use `npm ci` for repeatable installs.
 
+## Languages
+
+Use the language selector in the top bar to switch between English, Russian,
+and Ukrainian. The choice is saved under `algo.language` in local storage.
+On the first visit, the app uses the first supported browser language, falling
+back to English. Ukrainian uses the standard `uk` code; saved `ua` values are
+also accepted. Switching languages preserves the route, selected pattern, and
+walkthrough position. The app still works if browser storage is unavailable.
+
+The UI, lessons, diagrams, walkthrough messages, accessibility labels, page title,
+and description are localized. Pseudocode, example inputs, mathematical notation,
+and official LeetCode problem names stay unchanged.
+
+Translations live in `src/i18n/ru.json` and `src/i18n/uk.json`, using English source
+text as keys. Components use `useLanguage().t(message, values)`; walkthrough
+functions accept the same translator and default to English. Keep interpolation
+placeholders identical in every language. Add new lesson text to both catalogs;
+the localization tests check lesson coverage and placeholder parity.
+
 ## Dependency policy
 
 Direct dependencies use exact stable versions. `.npmrc` limits new resolutions
@@ -52,6 +86,10 @@ install explicit stable versions, and run `npm run deps:verify`, `npm audit`, an
 `npm run check`. Do not bypass peer dependency checks.
 
 ## Commands
+
+`npm run examples:check` executes all displayed JavaScript examples and compiles and
+runs all displayed Java examples against normal and edge cases. It uses the project's
+Node version and requires `javac` and `java` (JDK 17 or newer) on PATH. It adds no npm dependencies.
 
 | Command                | Purpose                                           |
 | ---------------------- | ------------------------------------------------- |

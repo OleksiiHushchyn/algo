@@ -1,20 +1,23 @@
+import { useLanguage } from '@/i18n/context'
 import { useState } from 'react'
 import { traceSearch } from './trace'
 
 const values = [2, 5, 8, 12, 16, 23, 38, 56, 72]
 
 export function SearchVisualizer() {
+  const { t } = useLanguage()
+
   const [target, setTarget] = useState(23)
   const [stepIndex, setStepIndex] = useState(0)
-  const steps = traceSearch(values, target)
+  const steps = traceSearch(values, target, t)
   const step = steps[stepIndex]!
 
   return (
-    <section className="visualizer" aria-label="Interactive binary search">
+    <section className="visualizer" aria-label={t('Interactive binary search')}>
       <div className="section-topline">
-        <span className="eyebrow">See it happen</span>
+        <span className="eyebrow">{t('See it happen')}</span>
         <label className="target-select">
-          Find
+          {t('Find ')}
           <select
             value={target}
             onChange={(event) => {
@@ -22,9 +25,9 @@ export function SearchVisualizer() {
               setStepIndex(0)
             }}
           >
-            <option value={23}>23 · exists</option>
-            <option value={13}>13 · missing</option>
-            <option value={2}>2 · first item</option>
+            <option value={23}>{t('23 · exists')}</option>
+            <option value={13}>{t('13 · missing')}</option>
+            <option value={2}>{t('2 · first item')}</option>
           </select>
         </label>
       </div>
@@ -59,7 +62,10 @@ export function SearchVisualizer() {
       </p>
       <div className="visualizer-controls">
         <span className="small muted">
-          Step {stepIndex + 1} of {steps.length}
+          {t('Step {current} of {total}', {
+            current: stepIndex + 1,
+            total: steps.length,
+          })}
         </span>
         <div className="control-buttons">
           <button
@@ -67,11 +73,11 @@ export function SearchVisualizer() {
             onClick={() => setStepIndex(0)}
             disabled={stepIndex === 0}
           >
-            Reset
+            {t('Reset ')}
           </button>
           <button
             className="icon-button"
-            aria-label="Previous step"
+            aria-label={t('Previous step')}
             onClick={() => setStepIndex((index) => index - 1)}
             disabled={stepIndex === 0}
           >
@@ -82,12 +88,15 @@ export function SearchVisualizer() {
             onClick={() => setStepIndex((index) => index + 1)}
             disabled={stepIndex === steps.length - 1}
           >
-            Next step <span aria-hidden="true">→</span>
+            {t('Next step ')}
+            <span aria-hidden="true">→</span>
           </button>
         </div>
       </div>
       <p className="legend">
-        L = left bound · M = middle · R = right bound · faded = discarded
+        {t(
+          'L = left bound · M = middle · R = right bound · faded = discarded ',
+        )}
       </p>
     </section>
   )

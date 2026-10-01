@@ -1,8 +1,11 @@
+import { useLanguage } from '@/i18n/context'
 import { TopicPage } from '../shared/topic-page'
 import { MapTable, MapVisualizer } from './map-visualizer'
 import { patterns } from './patterns'
 
 export function HashMapsPage() {
+  const { t } = useLanguage()
+
   return (
     <TopicPage
       title="Hash maps"
@@ -18,7 +21,9 @@ export function HashMapsPage() {
         prefix: <MapVisualizer mode="prefix" />,
         frequency: (
           <figure className="static-diagram">
-            <span className="eyebrow">Count “aab”, then spend “aba”</span>
+            <span className="eyebrow">
+              {t('Count “aab”, then spend “aba”')}
+            </span>
             <MapTable
               columns={['Key · letter', 'Value · copies left']}
               entries={[
@@ -27,14 +32,15 @@ export function HashMapsPage() {
               ]}
             />
             <figcaption>
-              Spend a, then b, then a. Every lookup has a copy available; both
-              counts end at 0.
+              {t(
+                'Spend a, then b, then a. Every lookup has a copy available; both counts end at 0. ',
+              )}
             </figcaption>
           </figure>
         ),
         group: (
           <figure className="static-diagram">
-            <span className="eyebrow">Different words, shared key</span>
+            <span className="eyebrow">{t('Different words, shared key')}</span>
             <MapTable
               columns={['Key · sorted letters', 'Value · original words']}
               entries={[
@@ -43,8 +49,9 @@ export function HashMapsPage() {
               ]}
             />
             <figcaption>
-              The key “aet” leads to one list. Adding “ate” would append it to
-              that same list.
+              {t(
+                'The key “aet” leads to one list. Adding “ate” would append it to that same list. ',
+              )}
             </figcaption>
           </figure>
         ),
@@ -59,8 +66,9 @@ export function HashMapsPage() {
               ]}
             />
             <figcaption>
-              The second g → d agrees with both maps. But “ab” → “cc” fails: c
-              is already paired with a when b tries to claim it.
+              {t(
+                'The second g → d agrees with both maps. But “ab” → “cc” fails: c is already paired with a when b tries to claim it. ',
+              )}
             </figcaption>
           </figure>
         ),

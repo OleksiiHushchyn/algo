@@ -1,6 +1,8 @@
 import type { Pattern } from '../shared/types'
+import { codeExamples } from './code-examples'
+import { details } from './details'
 
-const content: Pattern[] = [
+const content: Omit<Pattern, 'codeExamples' | 'detailed'>[] = [
   {
     id: 'seen',
     title: 'Have I seen it before?',
@@ -309,6 +311,8 @@ return best`,
 
 export const patterns = content.map((pattern) => ({
   ...pattern,
+  codeExamples: codeExamples[pattern.id]!,
+  detailed: details[pattern.id]!,
   codeNote:
     'A = array · indices start at 0 · map.get(key, 0) means read or use 0 if missing (pseudocode). Hash lookups average O(1); worst cases can be slower.',
 }))

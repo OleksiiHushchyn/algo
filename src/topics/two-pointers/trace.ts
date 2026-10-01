@@ -1,3 +1,4 @@
+import { english, type Translate } from '@/i18n/messages'
 export type PairStep = {
   left: number
   right: number
@@ -9,6 +10,7 @@ export type PairStep = {
 export function tracePair(
   values: readonly number[],
   target: number,
+  t: Translate = english,
 ): PairStep[] {
   const steps: PairStep[] = []
   let left = 0
@@ -22,10 +24,20 @@ export function tracePair(
       right,
       found,
       message: found
-        ? `${comparison}. Found a pair at indices ${left} and ${right}.`
+        ? t('{comparison}. Found a pair at indices {left} and {right}.', {
+            comparison,
+            left,
+            right,
+          })
         : sum < target
-          ? `${comparison} < ${target}. Move L right: even the largest partner is too small for ${values[left]}.`
-          : `${comparison} > ${target}. Move R left: even the smallest partner is too large for ${values[right]}.`,
+          ? t(
+              '{comparison} < {target}. Move L right: even the largest partner is too small for {value2}.',
+              { comparison, target, value2: values[left] },
+            )
+          : t(
+              '{comparison} > {target}. Move R left: even the smallest partner is too large for {value2}.',
+              { comparison, target, value2: values[right] },
+            ),
     })
     if (found) return steps
     if (sum < target) left += 1
@@ -35,7 +47,7 @@ export function tracePair(
     left,
     right,
     found: false,
-    message: 'Fewer than two items remain. No pair found; return [].',
+    message: t('Fewer than two items remain. No pair found; return [].'),
   })
   return steps
 }

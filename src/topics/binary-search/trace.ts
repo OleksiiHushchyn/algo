@@ -1,3 +1,4 @@
+import { english, type Translate } from '@/i18n/messages'
 export type SearchStep = {
   left: number
   right: number
@@ -9,6 +10,7 @@ export type SearchStep = {
 export function traceSearch(
   values: readonly number[],
   target: number,
+  t: Translate = english,
 ): SearchStep[] {
   const steps: SearchStep[] = []
   let left = 0
@@ -23,10 +25,20 @@ export function traceSearch(
       mid,
       found,
       message: found
-        ? `${value} = ${target}. Found at index ${mid}.`
+        ? t('{value} = {target}. Found at index {mid}.', {
+            value,
+            target,
+            mid,
+          })
         : value < target
-          ? `${value} < ${target}. Discard the middle and everything to its left.`
-          : `${value} > ${target}. Discard the middle and everything to its right.`,
+          ? t(
+              '{value} < {target}. Discard the middle and everything to its left.',
+              { value, target },
+            )
+          : t(
+              '{value} > {target}. Discard the middle and everything to its right.',
+              { value, target },
+            ),
     })
     if (found) return steps
     if (value < target) left = mid + 1
@@ -37,7 +49,7 @@ export function traceSearch(
     right,
     mid: null,
     found: false,
-    message: 'Left passed right. No items remain: return −1 (not found).',
+    message: t('Left passed right. No items remain: return −1 (not found).'),
   })
   return steps
 }

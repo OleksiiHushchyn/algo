@@ -1,6 +1,8 @@
 import type { Pattern } from '@/topics/shared/types'
+import { codeExamples } from './code-examples'
+import { details } from './details'
 
-const content: Pattern[] = [
+const content: Omit<Pattern, 'codeExamples' | 'detailed'>[] = [
   {
     id: 'fixed',
     title: 'Keep a fixed-size window',
@@ -311,6 +313,8 @@ return s[bestStart : bestStart + bestLength]`,
 
 export const patterns = content.map((pattern) => ({
   ...pattern,
+  codeExamples: codeExamples[pattern.id]!,
+  detailed: details[pattern.id]!,
   codeNote:
     pattern.codeNote ??
     'Indices start at 0 · window length = right − left + 1 · count maps default to 0',

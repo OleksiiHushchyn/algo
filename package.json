@@ -17,6 +17,7 @@
     "format:check": "prettier --check .",
     "test": "vitest",
     "test:run": "vitest run",
+    "examples:check": "node --experimental-strip-types scripts/check-code-examples.mjs",
     "deps:verify": "node scripts/verify-dependencies.mjs",
     "check": "npm run format:check && npm run lint && npm run test:run && npm run build"
   },

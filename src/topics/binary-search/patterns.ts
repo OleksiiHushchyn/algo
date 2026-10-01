@@ -1,6 +1,8 @@
 import type { Pattern } from '@/topics/shared/types'
+import { codeExamples } from './code-examples'
+import { details } from './details'
 
-export const patterns: Pattern[] = [
+const content: Omit<Pattern, 'codeExamples' | 'detailed'>[] = [
   {
     id: 'exact',
     title: 'Find a value',
@@ -290,3 +292,9 @@ return left  // a peak's index`,
     ],
   },
 ]
+
+export const patterns: Pattern[] = content.map((pattern) => ({
+  ...pattern,
+  codeExamples: codeExamples[pattern.id]!,
+  detailed: details[pattern.id]!,
+}))
